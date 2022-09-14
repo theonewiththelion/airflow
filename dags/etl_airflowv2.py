@@ -22,7 +22,6 @@ from airflow.utils.task_group import TaskGroup
 #Transformation - get data from table and perform transformation
 #Load - Get from old table to new table
 
-#Add Dag - arguments
 #Airflow arguments
 default_args = {
     'owner': 'admin',
@@ -161,11 +160,11 @@ def transformation_date_reported():
     pandas_gbq.to_gbq(df_transformed_austin_crime1, table_id, project_id='crafty-shield-359406', if_exists='replace')
     print("Reported time fixed, and loaded into staging area 2 - completed")
 
-
-    #defi to drop columns
+#definition to drop columns
     #Drop columns
     #created new columns, no need for this two
     #df_transformed_austin_crime1 = df_transformed_austin_crime1.drop(columns=['new_occurred_time', 'new_reported_time'])
+
 #Load
 def load_data():
     #get data from the staging table 
