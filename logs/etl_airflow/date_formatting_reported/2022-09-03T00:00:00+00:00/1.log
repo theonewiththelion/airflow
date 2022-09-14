@@ -1,0 +1,390 @@
+[2022-09-03 14:40:41,475] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:40:41,478] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:40:41,478] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:40:41,478] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:40:41,478] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:40:41,483] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): date_formatting_reported> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:40:41,491] {standard_task_runner.py:52} INFO - Started process 42164 to run task
+[2022-09-03 14:40:41,496] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'date_formatting_reported', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '681', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpfs5r8b_6', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpfva3psam']
+[2022-09-03 14:40:41,497] {standard_task_runner.py:77} INFO - Job 681: Subtask date_formatting_reported
+[2022-09-03 14:40:41,520] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:40:41,541] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=date_formatting_reported
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:40:41,541] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 154, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+UnboundLocalError: local variable 'df_transformed_austin_crime1' referenced before assignment
+[2022-09-03 14:40:41,545] {taskinstance.py:1267} INFO - Marking task as FAILED. dag_id=etl_airflow, task_id=date_formatting_reported, execution_date=20220903T000000, start_date=20220903T194041, end_date=20220903T194041
+[2022-09-03 14:40:41,551] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-09-03 14:40:41,552] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-09-03 14:40:41,552] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-09-03 14:40:41,553] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-09-03 14:40:41,553] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,554] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,554] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,555] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-09-03 14:40:41,555] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,556] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,556] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,557] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:40:41,563] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-09-03 14:40:41,563] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-03 14:40:41,563] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-03 14:40:41,566] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-03 14:40:41,566] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-03 14:40:41,567] {taskinstance.py:1751} ERROR - Failed to send email to: jonathan.dejesus.azor@gmail.com
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 154, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+UnboundLocalError: local variable 'df_transformed_austin_crime1' referenced before assignment
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2093, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1749, in handle_failure
+    self.email_alert(error)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2095, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+[2022-09-03 14:40:41,571] {standard_task_runner.py:89} ERROR - Failed to execute job 681 for task date_formatting_reported
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 154, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+UnboundLocalError: local variable 'df_transformed_austin_crime1' referenced before assignment
+[2022-09-03 14:40:41,598] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-09-03 14:40:41,611] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:51:52,868] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:51:52,871] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:51:52,871] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:51:52,871] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:51:52,871] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:51:52,876] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): date_formatting_reported> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:51:52,883] {standard_task_runner.py:52} INFO - Started process 42404 to run task
+[2022-09-03 14:51:52,887] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'date_formatting_reported', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '689', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpjggdjufr', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpo5z88jwn']
+[2022-09-03 14:51:52,888] {standard_task_runner.py:77} INFO - Job 689: Subtask date_formatting_reported
+[2022-09-03 14:51:52,912] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:51:52,933] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=date_formatting_reported
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:51:56,160] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:51:59,163] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:51:59,165] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:51:59,166] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:52:00,609] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:52:00,868] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 812.51rows/s]
+[2022-09-03 14:52:00,870] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 806.16rows/s]
+[2022-09-03 14:52:00,870] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:52:00,878] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:52:00,878] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'reported_date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 157, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'reported_date'
+[2022-09-03 14:52:00,888] {taskinstance.py:1267} INFO - Marking task as FAILED. dag_id=etl_airflow, task_id=date_formatting_reported, execution_date=20220903T000000, start_date=20220903T195152, end_date=20220903T195200
+[2022-09-03 14:52:00,894] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-09-03 14:52:00,895] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-09-03 14:52:00,896] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-09-03 14:52:00,896] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-09-03 14:52:00,897] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,897] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,898] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,898] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-09-03 14:52:00,899] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,899] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,900] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,900] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-03 14:52:00,906] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-09-03 14:52:00,906] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-03 14:52:00,906] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-03 14:52:00,912] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-03 14:52:00,913] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-03 14:52:00,913] {taskinstance.py:1751} ERROR - Failed to send email to: jonathan.dejesus.azor@gmail.com
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'reported_date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 157, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'reported_date'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2093, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1749, in handle_failure
+    self.email_alert(error)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2095, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+[2022-09-03 14:52:00,920] {standard_task_runner.py:89} ERROR - Failed to execute job 689 for task date_formatting_reported
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3621, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'reported_date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_airflowv2.py", line 157, in transformation_date_reported
+    r_time = pd.to_datetime(df_transformed_austin_crime1['reported_date'].astype(str).str.zfill(4), format='%H%M').dt.time
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas/core/indexes/base.py", line 3623, in get_loc
+    raise KeyError(key) from err
+KeyError: 'reported_date'
+[2022-09-03 14:52:00,952] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-09-03 14:52:00,965] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 15:37:14,094] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 15:37:14,098] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 15:37:14,098] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 15:37:14,098] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 15:37:14,098] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 15:37:14,102] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): date_formatting_reported> on 2022-09-03 00:00:00+00:00
+[2022-09-03 15:37:14,108] {standard_task_runner.py:52} INFO - Started process 43859 to run task
+[2022-09-03 15:37:14,112] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'date_formatting_reported', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '693', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpetgb4dac', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpd257jzon']
+[2022-09-03 15:37:14,113] {standard_task_runner.py:77} INFO - Job 693: Subtask date_formatting_reported
+[2022-09-03 15:37:14,135] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.date_formatting_reported scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 15:37:14,156] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=date_formatting_reported
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 15:37:14,373] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:37:14,373] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:37:14,373] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:37:14,373] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 15:37:15,454] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/10 [00:00<?, ?rows/s]
+[2022-09-03 15:37:15,703] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 10/10 [00:00<00:00, 40.49rows/s]
+[2022-09-03 15:37:15,704] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 10/10 [00:00<00:00, 40.15rows/s]
+[2022-09-03 15:37:15,705] {logging_mixin.py:109} WARNING - 
+[2022-09-03 15:37:19,203] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 15:37:19,204] {gbq.py:604} INFO - 10 out of 10 rows loaded.
+[2022-09-03 15:37:19,205] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1576.81it/s]
+[2022-09-03 15:37:19,208] {logging_mixin.py:109} WARNING - 
+[2022-09-03 15:37:19,209] {logging_mixin.py:109} INFO - Reported time fixed, and loaded into staging area 2 - completed
+[2022-09-03 15:37:19,210] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 15:37:19,224] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=date_formatting_reported, execution_date=20220903T000000, start_date=20220903T203714, end_date=20220903T203719
+[2022-09-03 15:37:19,277] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 15:37:19,289] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

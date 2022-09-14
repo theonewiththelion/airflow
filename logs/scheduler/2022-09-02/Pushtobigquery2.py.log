@@ -1,0 +1,1054 @@
+[2022-09-02 12:16:19,045] {processor.py:163} INFO - Started process (PID=36387) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:16:19,045] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:16:19,046] {logging_mixin.py:109} INFO - [2022-09-02 12:16:19,045] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:16:19,764] {logging_mixin.py:109} INFO - [2022-09-02 12:16:19,764] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:16:24,640] {logging_mixin.py:109} INFO - [2022-09-02 12:16:24,638] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:16:27,642] {logging_mixin.py:109} INFO - [2022-09-02 12:16:27,642] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:16:27,643] {logging_mixin.py:109} INFO - [2022-09-02 12:16:27,643] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:16:27,643] {logging_mixin.py:109} INFO - [2022-09-02 12:16:27,643] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:16:32,924] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:16:32,925] {logging_mixin.py:109} INFO - [2022-09-02 12:16:32,925] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:16:32,925] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4202.71it/s]
+[2022-09-02 12:16:32,925] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:16:32,925] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:16:32,958] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:16:32,969] {logging_mixin.py:109} INFO - [2022-09-02 12:16:32,969] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:16:32,974] {logging_mixin.py:109} INFO - [2022-09-02 12:16:32,974] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:16:32,978] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.934 seconds
+[2022-09-02 12:17:04,897] {processor.py:163} INFO - Started process (PID=36404) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:17:04,897] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:17:04,898] {logging_mixin.py:109} INFO - [2022-09-02 12:17:04,898] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:17:05,637] {logging_mixin.py:109} INFO - [2022-09-02 12:17:05,637] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:17:10,039] {logging_mixin.py:109} INFO - [2022-09-02 12:17:10,038] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:17:13,041] {logging_mixin.py:109} INFO - [2022-09-02 12:17:13,041] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:17:13,042] {logging_mixin.py:109} INFO - [2022-09-02 12:17:13,042] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:17:13,043] {logging_mixin.py:109} INFO - [2022-09-02 12:17:13,043] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:17:19,385] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:17:19,385] {logging_mixin.py:109} INFO - [2022-09-02 12:17:19,385] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:17:19,386] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1972.86it/s]
+[2022-09-02 12:17:19,386] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:17:19,386] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:17:19,417] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:17:19,428] {logging_mixin.py:109} INFO - [2022-09-02 12:17:19,428] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:17:19,433] {logging_mixin.py:109} INFO - [2022-09-02 12:17:19,433] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:17:19,437] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.540 seconds
+[2022-09-02 12:18:36,453] {processor.py:163} INFO - Started process (PID=36491) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:18:36,454] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:18:36,454] {logging_mixin.py:109} INFO - [2022-09-02 12:18:36,454] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:18:37,153] {logging_mixin.py:109} INFO - [2022-09-02 12:18:37,153] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:18:41,804] {logging_mixin.py:109} INFO - [2022-09-02 12:18:41,804] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:18:44,806] {logging_mixin.py:109} INFO - [2022-09-02 12:18:44,806] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:18:44,807] {logging_mixin.py:109} INFO - [2022-09-02 12:18:44,807] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:18:44,807] {logging_mixin.py:109} INFO - [2022-09-02 12:18:44,807] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:18:49,111] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:18:49,112] {logging_mixin.py:109} INFO - [2022-09-02 12:18:49,111] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:18:49,112] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2792.48it/s]
+[2022-09-02 12:18:49,112] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:18:49,112] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:18:49,138] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:18:49,149] {logging_mixin.py:109} INFO - [2022-09-02 12:18:49,149] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:18:49,154] {logging_mixin.py:109} INFO - [2022-09-02 12:18:49,153] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:18:49,157] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.704 seconds
+[2022-09-02 12:20:03,644] {processor.py:163} INFO - Started process (PID=36516) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:20:03,645] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:20:03,645] {logging_mixin.py:109} INFO - [2022-09-02 12:20:03,645] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:20:04,367] {logging_mixin.py:109} INFO - [2022-09-02 12:20:04,367] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:20:08,502] {logging_mixin.py:109} INFO - [2022-09-02 12:20:08,502] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:20:11,505] {logging_mixin.py:109} INFO - [2022-09-02 12:20:11,504] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:20:11,506] {logging_mixin.py:109} INFO - [2022-09-02 12:20:11,506] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:20:11,506] {logging_mixin.py:109} INFO - [2022-09-02 12:20:11,506] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:20:16,219] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:20:16,219] {logging_mixin.py:109} INFO - [2022-09-02 12:20:16,219] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:20:16,219] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3905.31it/s]
+[2022-09-02 12:20:16,219] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:20:16,219] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:20:16,252] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:20:16,262] {logging_mixin.py:109} INFO - [2022-09-02 12:20:16,261] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:20:16,266] {logging_mixin.py:109} INFO - [2022-09-02 12:20:16,266] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:20:16,270] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.626 seconds
+[2022-09-02 12:21:03,903] {processor.py:163} INFO - Started process (PID=36542) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:21:03,903] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:21:03,903] {logging_mixin.py:109} INFO - [2022-09-02 12:21:03,903] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:21:04,653] {logging_mixin.py:109} INFO - [2022-09-02 12:21:04,653] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:21:08,947] {logging_mixin.py:109} INFO - [2022-09-02 12:21:08,947] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:21:11,949] {logging_mixin.py:109} INFO - [2022-09-02 12:21:11,949] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:21:11,951] {logging_mixin.py:109} INFO - [2022-09-02 12:21:11,950] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:21:11,951] {logging_mixin.py:109} INFO - [2022-09-02 12:21:11,951] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:21:16,394] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:21:16,395] {logging_mixin.py:109} INFO - [2022-09-02 12:21:16,395] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:21:16,395] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3310.42it/s]
+[2022-09-02 12:21:16,395] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:21:16,396] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:21:16,421] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:21:16,433] {logging_mixin.py:109} INFO - [2022-09-02 12:21:16,433] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:21:16,438] {logging_mixin.py:109} INFO - [2022-09-02 12:21:16,438] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:21:16,441] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.539 seconds
+[2022-09-02 12:21:50,770] {processor.py:163} INFO - Started process (PID=36564) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:21:50,770] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:21:50,771] {logging_mixin.py:109} INFO - [2022-09-02 12:21:50,770] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:21:51,501] {logging_mixin.py:109} INFO - [2022-09-02 12:21:51,501] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:21:54,596] {logging_mixin.py:109} INFO - [2022-09-02 12:21:54,596] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:21:54,596] {logging_mixin.py:109} INFO - [2022-09-02 12:21:54,596] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:21:54,596] {logging_mixin.py:109} INFO - [2022-09-02 12:21:54,596] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:21:54,596] {logging_mixin.py:109} INFO - [2022-09-02 12:21:54,596] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:22:00,420] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:22:00,421] {logging_mixin.py:109} INFO - [2022-09-02 12:22:00,420] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:22:00,421] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4401.16it/s]
+[2022-09-02 12:22:00,421] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:22:00,421] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:22:00,451] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:22:00,461] {logging_mixin.py:109} INFO - [2022-09-02 12:22:00,461] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:22:00,466] {logging_mixin.py:109} INFO - [2022-09-02 12:22:00,466] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:22:00,471] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 9.701 seconds
+[2022-09-02 12:22:51,144] {processor.py:163} INFO - Started process (PID=36597) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:22:51,145] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:22:51,145] {logging_mixin.py:109} INFO - [2022-09-02 12:22:51,145] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:22:51,852] {logging_mixin.py:109} INFO - [2022-09-02 12:22:51,852] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:22:53,034] {logging_mixin.py:109} INFO - [2022-09-02 12:22:53,034] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:22:53,034] {logging_mixin.py:109} INFO - [2022-09-02 12:22:53,034] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:22:53,034] {logging_mixin.py:109} INFO - [2022-09-02 12:22:53,034] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:22:53,034] {logging_mixin.py:109} INFO - [2022-09-02 12:22:53,034] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:22:57,290] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:22:57,291] {logging_mixin.py:109} INFO - [2022-09-02 12:22:57,291] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:22:57,291] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2303.30it/s]
+[2022-09-02 12:22:57,292] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:22:57,292] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:22:57,322] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:22:57,333] {logging_mixin.py:109} INFO - [2022-09-02 12:22:57,333] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:22:57,338] {logging_mixin.py:109} INFO - [2022-09-02 12:22:57,338] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:22:57,342] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 6.199 seconds
+[2022-09-02 12:23:33,435] {processor.py:163} INFO - Started process (PID=36611) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:23:33,435] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:23:33,435] {logging_mixin.py:109} INFO - [2022-09-02 12:23:33,435] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:23:34,150] {logging_mixin.py:109} INFO - [2022-09-02 12:23:34,150] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:23:38,228] {logging_mixin.py:109} INFO - [2022-09-02 12:23:38,228] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:23:41,230] {logging_mixin.py:109} INFO - [2022-09-02 12:23:41,230] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:23:41,231] {logging_mixin.py:109} INFO - [2022-09-02 12:23:41,231] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:23:41,232] {logging_mixin.py:109} INFO - [2022-09-02 12:23:41,231] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:23:46,851] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:23:46,852] {logging_mixin.py:109} INFO - [2022-09-02 12:23:46,852] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:23:46,852] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3788.89it/s]
+[2022-09-02 12:23:46,852] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:23:46,852] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:23:46,877] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:23:46,888] {logging_mixin.py:109} INFO - [2022-09-02 12:23:46,888] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:23:46,893] {logging_mixin.py:109} INFO - [2022-09-02 12:23:46,893] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:23:46,896] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.462 seconds
+[2022-09-02 12:24:18,306] {processor.py:163} INFO - Started process (PID=36622) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:24:18,306] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:24:18,306] {logging_mixin.py:109} INFO - [2022-09-02 12:24:18,306] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:24:18,998] {logging_mixin.py:109} INFO - [2022-09-02 12:24:18,998] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:24:23,369] {logging_mixin.py:109} INFO - [2022-09-02 12:24:23,369] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:24:26,371] {logging_mixin.py:109} INFO - [2022-09-02 12:24:26,371] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:24:26,372] {logging_mixin.py:109} INFO - [2022-09-02 12:24:26,372] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:24:26,372] {logging_mixin.py:109} INFO - [2022-09-02 12:24:26,372] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:24:33,644] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:24:33,644] {logging_mixin.py:109} INFO - [2022-09-02 12:24:33,644] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:24:33,645] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2272.10it/s]
+[2022-09-02 12:24:33,645] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:24:33,645] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:24:33,676] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:24:33,685] {logging_mixin.py:109} INFO - [2022-09-02 12:24:33,685] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:24:33,689] {logging_mixin.py:109} INFO - [2022-09-02 12:24:33,689] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:24:33,693] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.388 seconds
+[2022-09-02 12:26:45,444] {processor.py:163} INFO - Started process (PID=36650) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:26:45,444] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:26:45,445] {logging_mixin.py:109} INFO - [2022-09-02 12:26:45,444] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:26:46,151] {logging_mixin.py:109} INFO - [2022-09-02 12:26:46,150] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:26:52,235] {logging_mixin.py:109} INFO - [2022-09-02 12:26:52,235] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:26:55,240] {logging_mixin.py:109} INFO - [2022-09-02 12:26:55,240] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:26:55,242] {logging_mixin.py:109} INFO - [2022-09-02 12:26:55,241] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:26:55,242] {logging_mixin.py:109} INFO - [2022-09-02 12:26:55,242] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:27:00,672] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:27:00,672] {logging_mixin.py:109} INFO - [2022-09-02 12:27:00,672] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:27:00,673] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3847.99it/s]
+[2022-09-02 12:27:00,673] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:27:00,673] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:27:00,706] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:27:00,716] {logging_mixin.py:109} INFO - [2022-09-02 12:27:00,715] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:27:00,721] {logging_mixin.py:109} INFO - [2022-09-02 12:27:00,721] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:27:00,724] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.271 seconds
+[2022-09-02 12:27:32,013] {processor.py:163} INFO - Started process (PID=36667) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:27:32,014] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:27:32,014] {logging_mixin.py:109} INFO - [2022-09-02 12:27:32,014] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:27:32,767] {logging_mixin.py:109} INFO - [2022-09-02 12:27:32,767] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:27:37,386] {logging_mixin.py:109} INFO - [2022-09-02 12:27:37,386] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:27:40,388] {logging_mixin.py:109} INFO - [2022-09-02 12:27:40,388] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:27:40,389] {logging_mixin.py:109} INFO - [2022-09-02 12:27:40,389] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:27:40,389] {logging_mixin.py:109} INFO - [2022-09-02 12:27:40,389] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:27:45,239] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:27:45,239] {logging_mixin.py:109} INFO - [2022-09-02 12:27:45,239] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:27:45,240] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4604.07it/s]
+[2022-09-02 12:27:45,240] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:27:45,240] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:27:45,270] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:27:45,280] {logging_mixin.py:109} INFO - [2022-09-02 12:27:45,280] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:27:45,285] {logging_mixin.py:109} INFO - [2022-09-02 12:27:45,285] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:27:45,289] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.275 seconds
+[2022-09-02 12:28:16,429] {processor.py:163} INFO - Started process (PID=36683) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:28:16,430] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:28:16,430] {logging_mixin.py:109} INFO - [2022-09-02 12:28:16,430] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:28:17,151] {logging_mixin.py:109} INFO - [2022-09-02 12:28:17,151] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:28:21,352] {logging_mixin.py:109} INFO - [2022-09-02 12:28:21,351] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:28:24,354] {logging_mixin.py:109} INFO - [2022-09-02 12:28:24,354] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:28:24,354] {logging_mixin.py:109} INFO - [2022-09-02 12:28:24,354] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:28:24,355] {logging_mixin.py:109} INFO - [2022-09-02 12:28:24,355] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:28:28,923] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:28:28,924] {logging_mixin.py:109} INFO - [2022-09-02 12:28:28,923] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:28:28,924] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2053.01it/s]
+[2022-09-02 12:28:28,924] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:28:28,925] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:28:28,960] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:28:28,969] {logging_mixin.py:109} INFO - [2022-09-02 12:28:28,969] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:28:28,974] {logging_mixin.py:109} INFO - [2022-09-02 12:28:28,974] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:28:28,978] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.549 seconds
+[2022-09-02 12:29:00,092] {processor.py:163} INFO - Started process (PID=36688) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:00,092] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:29:00,093] {logging_mixin.py:109} INFO - [2022-09-02 12:29:00,093] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:00,818] {logging_mixin.py:109} INFO - [2022-09-02 12:29:00,818] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:29:05,698] {logging_mixin.py:109} INFO - [2022-09-02 12:29:05,698] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:29:08,700] {logging_mixin.py:109} INFO - [2022-09-02 12:29:08,700] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:29:08,701] {logging_mixin.py:109} INFO - [2022-09-02 12:29:08,701] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:29:08,701] {logging_mixin.py:109} INFO - [2022-09-02 12:29:08,701] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:29:13,475] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:29:13,476] {logging_mixin.py:109} INFO - [2022-09-02 12:29:13,475] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:29:13,476] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3030.57it/s]
+[2022-09-02 12:29:13,476] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:29:13,476] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:29:13,506] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:13,516] {logging_mixin.py:109} INFO - [2022-09-02 12:29:13,516] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:29:13,520] {logging_mixin.py:109} INFO - [2022-09-02 12:29:13,520] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:29:13,524] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.432 seconds
+[2022-09-02 12:29:44,616] {processor.py:163} INFO - Started process (PID=36694) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:44,616] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:29:44,616] {logging_mixin.py:109} INFO - [2022-09-02 12:29:44,616] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:45,330] {logging_mixin.py:109} INFO - [2022-09-02 12:29:45,330] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:29:50,040] {logging_mixin.py:109} INFO - [2022-09-02 12:29:50,039] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:29:53,042] {logging_mixin.py:109} INFO - [2022-09-02 12:29:53,042] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:29:53,051] {logging_mixin.py:109} INFO - [2022-09-02 12:29:53,050] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:29:53,051] {logging_mixin.py:109} INFO - [2022-09-02 12:29:53,051] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:29:57,225] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:29:57,225] {logging_mixin.py:109} INFO - [2022-09-02 12:29:57,225] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:29:57,226] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4629.47it/s]
+[2022-09-02 12:29:57,226] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:29:57,226] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:29:57,255] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:29:57,264] {logging_mixin.py:109} INFO - [2022-09-02 12:29:57,264] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:29:57,269] {logging_mixin.py:109} INFO - [2022-09-02 12:29:57,269] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:29:57,273] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.657 seconds
+[2022-09-02 12:30:28,404] {processor.py:163} INFO - Started process (PID=36701) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:30:28,404] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:30:28,405] {logging_mixin.py:109} INFO - [2022-09-02 12:30:28,405] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:30:29,105] {logging_mixin.py:109} INFO - [2022-09-02 12:30:29,105] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:30:33,790] {logging_mixin.py:109} INFO - [2022-09-02 12:30:33,790] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:30:36,793] {logging_mixin.py:109} INFO - [2022-09-02 12:30:36,792] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:30:36,794] {logging_mixin.py:109} INFO - [2022-09-02 12:30:36,794] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:30:36,794] {logging_mixin.py:109} INFO - [2022-09-02 12:30:36,794] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:30:42,046] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:30:42,047] {logging_mixin.py:109} INFO - [2022-09-02 12:30:42,047] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:30:42,047] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2236.96it/s]
+[2022-09-02 12:30:42,047] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:30:42,048] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:30:42,076] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:30:42,085] {logging_mixin.py:109} INFO - [2022-09-02 12:30:42,085] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:30:42,090] {logging_mixin.py:109} INFO - [2022-09-02 12:30:42,090] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:30:42,094] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.690 seconds
+[2022-09-02 12:31:13,197] {processor.py:163} INFO - Started process (PID=36705) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:31:13,198] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:31:13,198] {logging_mixin.py:109} INFO - [2022-09-02 12:31:13,198] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:31:13,910] {logging_mixin.py:109} INFO - [2022-09-02 12:31:13,910] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:31:18,140] {logging_mixin.py:109} INFO - [2022-09-02 12:31:18,140] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:31:21,143] {logging_mixin.py:109} INFO - [2022-09-02 12:31:21,142] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:31:21,144] {logging_mixin.py:109} INFO - [2022-09-02 12:31:21,144] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:31:21,144] {logging_mixin.py:109} INFO - [2022-09-02 12:31:21,144] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:31:25,780] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:31:25,781] {logging_mixin.py:109} INFO - [2022-09-02 12:31:25,781] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:31:25,781] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2213.35it/s]
+[2022-09-02 12:31:25,781] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:31:25,782] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:31:25,811] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:31:25,821] {logging_mixin.py:109} INFO - [2022-09-02 12:31:25,820] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:31:25,826] {logging_mixin.py:109} INFO - [2022-09-02 12:31:25,826] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:31:25,830] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.633 seconds
+[2022-09-02 12:31:56,975] {processor.py:163} INFO - Started process (PID=36724) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:31:56,975] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:31:56,976] {logging_mixin.py:109} INFO - [2022-09-02 12:31:56,976] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:31:57,710] {logging_mixin.py:109} INFO - [2022-09-02 12:31:57,710] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:32:01,884] {logging_mixin.py:109} INFO - [2022-09-02 12:32:01,884] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:32:04,886] {logging_mixin.py:109} INFO - [2022-09-02 12:32:04,886] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:32:04,887] {logging_mixin.py:109} INFO - [2022-09-02 12:32:04,887] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:32:04,887] {logging_mixin.py:109} INFO - [2022-09-02 12:32:04,887] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:32:09,792] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:32:09,792] {logging_mixin.py:109} INFO - [2022-09-02 12:32:09,792] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:32:09,793] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2272.10it/s]
+[2022-09-02 12:32:09,793] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:32:09,793] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:32:09,823] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:32:09,833] {logging_mixin.py:109} INFO - [2022-09-02 12:32:09,833] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:32:09,838] {logging_mixin.py:109} INFO - [2022-09-02 12:32:09,838] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:32:09,841] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.866 seconds
+[2022-09-02 12:32:40,954] {processor.py:163} INFO - Started process (PID=36731) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:32:40,955] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:32:40,955] {logging_mixin.py:109} INFO - [2022-09-02 12:32:40,955] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:32:41,690] {logging_mixin.py:109} INFO - [2022-09-02 12:32:41,690] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:32:46,588] {logging_mixin.py:109} INFO - [2022-09-02 12:32:46,587] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:32:49,591] {logging_mixin.py:109} INFO - [2022-09-02 12:32:49,590] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:32:49,592] {logging_mixin.py:109} INFO - [2022-09-02 12:32:49,591] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:32:49,592] {logging_mixin.py:109} INFO - [2022-09-02 12:32:49,592] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:32:54,194] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:32:54,194] {logging_mixin.py:109} INFO - [2022-09-02 12:32:54,194] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:32:54,194] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3679.21it/s]
+[2022-09-02 12:32:54,194] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:32:54,195] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:32:54,224] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:32:54,234] {logging_mixin.py:109} INFO - [2022-09-02 12:32:54,234] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:32:54,238] {logging_mixin.py:109} INFO - [2022-09-02 12:32:54,238] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:32:54,242] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.288 seconds
+[2022-09-02 12:33:25,353] {processor.py:163} INFO - Started process (PID=36740) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:33:25,353] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:33:25,353] {logging_mixin.py:109} INFO - [2022-09-02 12:33:25,353] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:33:26,048] {logging_mixin.py:109} INFO - [2022-09-02 12:33:26,048] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:33:30,222] {logging_mixin.py:109} INFO - [2022-09-02 12:33:30,222] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:33:33,224] {logging_mixin.py:109} INFO - [2022-09-02 12:33:33,224] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:33:33,225] {logging_mixin.py:109} INFO - [2022-09-02 12:33:33,225] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:33:33,226] {logging_mixin.py:109} INFO - [2022-09-02 12:33:33,226] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:33:39,433] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:33:39,433] {logging_mixin.py:109} INFO - [2022-09-02 12:33:39,433] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:33:39,434] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3679.21it/s]
+[2022-09-02 12:33:39,434] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:33:39,434] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:33:39,463] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:33:39,473] {logging_mixin.py:109} INFO - [2022-09-02 12:33:39,473] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:33:39,478] {logging_mixin.py:109} INFO - [2022-09-02 12:33:39,478] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T06:20:00+00:00
+[2022-09-02 12:33:39,482] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.130 seconds
+[2022-09-02 12:34:35,325] {processor.py:163} INFO - Started process (PID=36767) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:34:35,326] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:34:35,326] {logging_mixin.py:109} INFO - [2022-09-02 12:34:35,326] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:34:36,062] {logging_mixin.py:109} INFO - [2022-09-02 12:34:36,062] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:34:37,809] {logging_mixin.py:109} INFO - [2022-09-02 12:34:37,809] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 65] No route to host
+[2022-09-02 12:34:37,809] {logging_mixin.py:109} INFO - [2022-09-02 12:34:37,809] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:34:37,809] {logging_mixin.py:109} INFO - [2022-09-02 12:34:37,809] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:34:37,809] {logging_mixin.py:109} INFO - [2022-09-02 12:34:37,809] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:34:42,909] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:34:42,909] {logging_mixin.py:109} INFO - [2022-09-02 12:34:42,909] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:34:42,910] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2299.51it/s]
+[2022-09-02 12:34:42,910] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:34:42,910] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:34:42,938] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:34:42,949] {logging_mixin.py:109} INFO - [2022-09-02 12:34:42,949] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:34:42,953] {logging_mixin.py:109} INFO - [2022-09-02 12:34:42,953] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:34:42,957] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 7.632 seconds
+[2022-09-02 12:35:18,988] {processor.py:163} INFO - Started process (PID=36782) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:35:18,988] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:35:18,989] {logging_mixin.py:109} INFO - [2022-09-02 12:35:18,988] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:35:19,693] {logging_mixin.py:109} INFO - [2022-09-02 12:35:19,693] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:35:20,797] {logging_mixin.py:109} INFO - [2022-09-02 12:35:20,797] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:35:20,798] {logging_mixin.py:109} INFO - [2022-09-02 12:35:20,798] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:35:20,798] {logging_mixin.py:109} INFO - [2022-09-02 12:35:20,798] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:35:20,798] {logging_mixin.py:109} INFO - [2022-09-02 12:35:20,798] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:35:24,991] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:35:24,992] {logging_mixin.py:109} INFO - [2022-09-02 12:35:24,991] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:35:24,992] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3066.01it/s]
+[2022-09-02 12:35:24,992] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:35:24,992] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:35:25,019] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:35:25,028] {logging_mixin.py:109} INFO - [2022-09-02 12:35:25,028] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:35:25,033] {logging_mixin.py:109} INFO - [2022-09-02 12:35:25,033] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:35:25,037] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 6.049 seconds
+[2022-09-02 12:35:56,338] {processor.py:163} INFO - Started process (PID=36786) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:35:56,338] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:35:56,338] {logging_mixin.py:109} INFO - [2022-09-02 12:35:56,338] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:35:57,076] {logging_mixin.py:109} INFO - [2022-09-02 12:35:57,076] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:36:03,348] {logging_mixin.py:109} INFO - [2022-09-02 12:36:03,347] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:36:06,351] {logging_mixin.py:109} INFO - [2022-09-02 12:36:06,350] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:36:06,352] {logging_mixin.py:109} INFO - [2022-09-02 12:36:06,351] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:36:06,352] {logging_mixin.py:109} INFO - [2022-09-02 12:36:06,352] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:36:10,933] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:36:10,933] {logging_mixin.py:109} INFO - [2022-09-02 12:36:10,933] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:36:10,934] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2332.76it/s]
+[2022-09-02 12:36:10,934] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:36:10,934] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:36:10,964] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:36:10,974] {logging_mixin.py:109} INFO - [2022-09-02 12:36:10,973] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:36:10,978] {logging_mixin.py:109} INFO - [2022-09-02 12:36:10,978] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:36:10,983] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.645 seconds
+[2022-09-02 12:36:42,114] {processor.py:163} INFO - Started process (PID=36794) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:36:42,114] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:36:42,115] {logging_mixin.py:109} INFO - [2022-09-02 12:36:42,115] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:36:42,850] {logging_mixin.py:109} INFO - [2022-09-02 12:36:42,850] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:36:47,166] {logging_mixin.py:109} INFO - [2022-09-02 12:36:47,165] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:36:50,169] {logging_mixin.py:109} INFO - [2022-09-02 12:36:50,168] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:36:50,170] {logging_mixin.py:109} INFO - [2022-09-02 12:36:50,170] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:36:50,170] {logging_mixin.py:109} INFO - [2022-09-02 12:36:50,170] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:36:56,944] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:36:56,945] {logging_mixin.py:109} INFO - [2022-09-02 12:36:56,945] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:36:56,945] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4165.15it/s]
+[2022-09-02 12:36:56,945] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:36:56,946] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:36:56,976] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:36:56,988] {logging_mixin.py:109} INFO - [2022-09-02 12:36:56,987] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:36:56,992] {logging_mixin.py:109} INFO - [2022-09-02 12:36:56,992] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:36:56,996] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.882 seconds
+[2022-09-02 12:37:28,300] {processor.py:163} INFO - Started process (PID=36804) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:37:28,301] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:37:28,301] {logging_mixin.py:109} INFO - [2022-09-02 12:37:28,301] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:37:29,104] {logging_mixin.py:109} INFO - [2022-09-02 12:37:29,104] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:37:33,550] {logging_mixin.py:109} INFO - [2022-09-02 12:37:33,550] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:37:36,553] {logging_mixin.py:109} INFO - [2022-09-02 12:37:36,553] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:37:36,556] {logging_mixin.py:109} INFO - [2022-09-02 12:37:36,556] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:37:36,556] {logging_mixin.py:109} INFO - [2022-09-02 12:37:36,556] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:37:41,841] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:37:41,841] {logging_mixin.py:109} INFO - [2022-09-02 12:37:41,841] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:37:41,842] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4341.93it/s]
+[2022-09-02 12:37:41,842] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:37:41,842] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:37:41,872] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:37:41,884] {logging_mixin.py:109} INFO - [2022-09-02 12:37:41,884] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:37:41,889] {logging_mixin.py:109} INFO - [2022-09-02 12:37:41,889] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:37:41,894] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.594 seconds
+[2022-09-02 12:38:13,076] {processor.py:163} INFO - Started process (PID=36819) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:38:13,076] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:38:13,077] {logging_mixin.py:109} INFO - [2022-09-02 12:38:13,077] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:38:13,805] {logging_mixin.py:109} INFO - [2022-09-02 12:38:13,805] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:38:18,491] {logging_mixin.py:109} INFO - [2022-09-02 12:38:18,491] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:38:21,493] {logging_mixin.py:109} INFO - [2022-09-02 12:38:21,492] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:38:21,494] {logging_mixin.py:109} INFO - [2022-09-02 12:38:21,493] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:38:21,494] {logging_mixin.py:109} INFO - [2022-09-02 12:38:21,494] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:38:27,143] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:38:27,143] {logging_mixin.py:109} INFO - [2022-09-02 12:38:27,143] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:38:27,144] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4563.99it/s]
+[2022-09-02 12:38:27,144] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:38:27,144] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:38:27,172] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:38:27,182] {logging_mixin.py:109} INFO - [2022-09-02 12:38:27,182] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:38:27,190] {logging_mixin.py:109} INFO - [2022-09-02 12:38:27,190] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:38:27,195] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.119 seconds
+[2022-09-02 12:38:58,346] {processor.py:163} INFO - Started process (PID=36825) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:38:58,346] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:38:58,347] {logging_mixin.py:109} INFO - [2022-09-02 12:38:58,347] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:38:59,065] {logging_mixin.py:109} INFO - [2022-09-02 12:38:59,065] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:39:03,646] {logging_mixin.py:109} INFO - [2022-09-02 12:39:03,646] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:39:06,648] {logging_mixin.py:109} INFO - [2022-09-02 12:39:06,648] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:39:06,649] {logging_mixin.py:109} INFO - [2022-09-02 12:39:06,649] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:39:06,649] {logging_mixin.py:109} INFO - [2022-09-02 12:39:06,649] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:39:11,953] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:39:11,954] {logging_mixin.py:109} INFO - [2022-09-02 12:39:11,954] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:39:11,954] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2278.27it/s]
+[2022-09-02 12:39:11,954] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:39:11,955] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:39:11,989] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:39:11,998] {logging_mixin.py:109} INFO - [2022-09-02 12:39:11,998] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:39:12,003] {logging_mixin.py:109} INFO - [2022-09-02 12:39:12,002] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:39:12,006] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.660 seconds
+[2022-09-02 12:39:43,131] {processor.py:163} INFO - Started process (PID=36839) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:39:43,131] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:39:43,132] {logging_mixin.py:109} INFO - [2022-09-02 12:39:43,131] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:39:43,837] {logging_mixin.py:109} INFO - [2022-09-02 12:39:43,837] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:39:48,031] {logging_mixin.py:109} INFO - [2022-09-02 12:39:48,031] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:39:51,034] {logging_mixin.py:109} INFO - [2022-09-02 12:39:51,033] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:39:51,035] {logging_mixin.py:109} INFO - [2022-09-02 12:39:51,035] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:39:51,035] {logging_mixin.py:109} INFO - [2022-09-02 12:39:51,035] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:39:59,594] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:39:59,594] {logging_mixin.py:109} INFO - [2022-09-02 12:39:59,594] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:39:59,594] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4219.62it/s]
+[2022-09-02 12:39:59,594] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:39:59,595] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:39:59,625] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:39:59,637] {logging_mixin.py:109} INFO - [2022-09-02 12:39:59,637] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:39:59,642] {logging_mixin.py:109} INFO - [2022-09-02 12:39:59,642] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:39:59,646] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 16.515 seconds
+[2022-09-02 12:40:30,926] {processor.py:163} INFO - Started process (PID=36853) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:40:30,926] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:40:30,927] {logging_mixin.py:109} INFO - [2022-09-02 12:40:30,927] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:40:31,776] {logging_mixin.py:109} INFO - [2022-09-02 12:40:31,776] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:40:36,073] {logging_mixin.py:109} INFO - [2022-09-02 12:40:36,073] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:40:39,075] {logging_mixin.py:109} INFO - [2022-09-02 12:40:39,075] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:40:39,077] {logging_mixin.py:109} INFO - [2022-09-02 12:40:39,077] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:40:39,078] {logging_mixin.py:109} INFO - [2022-09-02 12:40:39,078] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:40:44,571] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:40:44,571] {logging_mixin.py:109} INFO - [2022-09-02 12:40:44,571] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:40:44,571] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2968.37it/s]
+[2022-09-02 12:40:44,572] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:40:44,572] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:40:44,598] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:40:44,608] {logging_mixin.py:109} INFO - [2022-09-02 12:40:44,608] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:40:44,613] {logging_mixin.py:109} INFO - [2022-09-02 12:40:44,613] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:40:44,617] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.691 seconds
+[2022-09-02 12:41:15,937] {processor.py:163} INFO - Started process (PID=36869) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:41:15,937] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:41:15,938] {logging_mixin.py:109} INFO - [2022-09-02 12:41:15,938] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:41:16,775] {logging_mixin.py:109} INFO - [2022-09-02 12:41:16,775] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:41:21,915] {logging_mixin.py:109} INFO - [2022-09-02 12:41:21,915] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:41:24,918] {logging_mixin.py:109} INFO - [2022-09-02 12:41:24,918] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:41:24,919] {logging_mixin.py:109} INFO - [2022-09-02 12:41:24,919] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:41:24,919] {logging_mixin.py:109} INFO - [2022-09-02 12:41:24,919] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:41:30,412] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:41:30,412] {logging_mixin.py:109} INFO - [2022-09-02 12:41:30,412] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:41:30,412] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4583.94it/s]
+[2022-09-02 12:41:30,412] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:41:30,412] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:41:30,446] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:41:30,457] {logging_mixin.py:109} INFO - [2022-09-02 12:41:30,457] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:41:30,462] {logging_mixin.py:109} INFO - [2022-09-02 12:41:30,462] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:41:30,465] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.528 seconds
+[2022-09-02 12:42:01,598] {processor.py:163} INFO - Started process (PID=36877) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:01,599] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:42:01,599] {logging_mixin.py:109} INFO - [2022-09-02 12:42:01,599] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:02,305] {logging_mixin.py:109} INFO - [2022-09-02 12:42:02,305] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:42:06,916] {logging_mixin.py:109} INFO - [2022-09-02 12:42:06,916] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:42:09,921] {logging_mixin.py:109} INFO - [2022-09-02 12:42:09,920] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:42:09,921] {logging_mixin.py:109} INFO - [2022-09-02 12:42:09,921] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:42:09,922] {logging_mixin.py:109} INFO - [2022-09-02 12:42:09,921] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:42:14,236] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:42:14,236] {logging_mixin.py:109} INFO - [2022-09-02 12:42:14,236] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:42:14,236] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4275.54it/s]
+[2022-09-02 12:42:14,236] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:42:14,236] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:42:14,273] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:14,284] {logging_mixin.py:109} INFO - [2022-09-02 12:42:14,284] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:42:14,289] {logging_mixin.py:109} INFO - [2022-09-02 12:42:14,289] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:42:14,293] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.695 seconds
+[2022-09-02 12:42:45,417] {processor.py:163} INFO - Started process (PID=36892) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:45,417] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:42:45,417] {logging_mixin.py:109} INFO - [2022-09-02 12:42:45,417] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:46,140] {logging_mixin.py:109} INFO - [2022-09-02 12:42:46,140] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:42:50,602] {logging_mixin.py:109} INFO - [2022-09-02 12:42:50,602] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:42:53,605] {logging_mixin.py:109} INFO - [2022-09-02 12:42:53,604] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:42:53,606] {logging_mixin.py:109} INFO - [2022-09-02 12:42:53,606] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:42:53,607] {logging_mixin.py:109} INFO - [2022-09-02 12:42:53,606] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:42:57,778] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:42:57,779] {logging_mixin.py:109} INFO - [2022-09-02 12:42:57,779] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:42:57,780] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1429.06it/s]
+[2022-09-02 12:42:57,780] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:42:57,780] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:42:57,811] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:42:57,821] {logging_mixin.py:109} INFO - [2022-09-02 12:42:57,821] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:42:57,827] {logging_mixin.py:109} INFO - [2022-09-02 12:42:57,827] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:42:57,831] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.414 seconds
+[2022-09-02 12:43:28,953] {processor.py:163} INFO - Started process (PID=36897) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:43:28,953] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:43:28,954] {logging_mixin.py:109} INFO - [2022-09-02 12:43:28,954] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:43:29,676] {logging_mixin.py:109} INFO - [2022-09-02 12:43:29,676] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:43:33,833] {logging_mixin.py:109} INFO - [2022-09-02 12:43:33,833] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:43:36,836] {logging_mixin.py:109} INFO - [2022-09-02 12:43:36,836] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:43:36,837] {logging_mixin.py:109} INFO - [2022-09-02 12:43:36,837] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:43:36,837] {logging_mixin.py:109} INFO - [2022-09-02 12:43:36,837] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:43:40,953] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:43:40,954] {logging_mixin.py:109} INFO - [2022-09-02 12:43:40,954] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:43:40,955] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 892.03it/s]
+[2022-09-02 12:43:40,955] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:43:40,956] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:43:40,984] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:43:40,998] {logging_mixin.py:109} INFO - [2022-09-02 12:43:40,997] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:43:41,003] {logging_mixin.py:109} INFO - [2022-09-02 12:43:41,003] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:43:41,007] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.054 seconds
+[2022-09-02 12:44:12,146] {processor.py:163} INFO - Started process (PID=36903) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:44:12,146] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:44:12,147] {logging_mixin.py:109} INFO - [2022-09-02 12:44:12,146] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:44:12,868] {logging_mixin.py:109} INFO - [2022-09-02 12:44:12,868] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:44:17,103] {logging_mixin.py:109} INFO - [2022-09-02 12:44:17,103] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:44:20,105] {logging_mixin.py:109} INFO - [2022-09-02 12:44:20,105] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:44:20,106] {logging_mixin.py:109} INFO - [2022-09-02 12:44:20,106] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:44:20,107] {logging_mixin.py:109} INFO - [2022-09-02 12:44:20,107] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:44:24,495] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:44:24,495] {logging_mixin.py:109} INFO - [2022-09-02 12:44:24,495] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:44:24,496] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2236.96it/s]
+[2022-09-02 12:44:24,496] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:44:24,496] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:44:24,524] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:44:24,533] {logging_mixin.py:109} INFO - [2022-09-02 12:44:24,533] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:44:24,538] {logging_mixin.py:109} INFO - [2022-09-02 12:44:24,538] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:44:24,542] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.396 seconds
+[2022-09-02 12:44:55,692] {processor.py:163} INFO - Started process (PID=36910) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:44:55,693] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:44:55,693] {logging_mixin.py:109} INFO - [2022-09-02 12:44:55,693] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:44:56,431] {logging_mixin.py:109} INFO - [2022-09-02 12:44:56,431] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:45:00,536] {logging_mixin.py:109} INFO - [2022-09-02 12:45:00,536] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:45:03,539] {logging_mixin.py:109} INFO - [2022-09-02 12:45:03,538] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:45:03,539] {logging_mixin.py:109} INFO - [2022-09-02 12:45:03,539] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:45:03,539] {logging_mixin.py:109} INFO - [2022-09-02 12:45:03,539] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:45:10,137] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:45:10,137] {logging_mixin.py:109} INFO - [2022-09-02 12:45:10,137] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:45:10,138] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3816.47it/s]
+[2022-09-02 12:45:10,138] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:45:10,138] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:45:10,162] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:45:10,171] {logging_mixin.py:109} INFO - [2022-09-02 12:45:10,171] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:45:10,176] {logging_mixin.py:109} INFO - [2022-09-02 12:45:10,176] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:45:10,180] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.487 seconds
+[2022-09-02 12:45:41,297] {processor.py:163} INFO - Started process (PID=36915) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:45:41,297] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:45:41,298] {logging_mixin.py:109} INFO - [2022-09-02 12:45:41,298] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:45:41,990] {logging_mixin.py:109} INFO - [2022-09-02 12:45:41,990] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:45:48,063] {logging_mixin.py:109} INFO - [2022-09-02 12:45:48,062] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:45:51,065] {logging_mixin.py:109} INFO - [2022-09-02 12:45:51,065] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:45:51,066] {logging_mixin.py:109} INFO - [2022-09-02 12:45:51,066] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:45:51,066] {logging_mixin.py:109} INFO - [2022-09-02 12:45:51,066] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:45:58,725] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:45:58,726] {logging_mixin.py:109} INFO - [2022-09-02 12:45:58,726] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:45:58,726] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4236.67it/s]
+[2022-09-02 12:45:58,726] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:45:58,726] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:45:58,756] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:45:58,766] {logging_mixin.py:109} INFO - [2022-09-02 12:45:58,765] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:45:58,770] {logging_mixin.py:109} INFO - [2022-09-02 12:45:58,770] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:45:58,774] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 17.477 seconds
+[2022-09-02 12:46:29,854] {processor.py:163} INFO - Started process (PID=36921) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:46:29,854] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:46:29,854] {logging_mixin.py:109} INFO - [2022-09-02 12:46:29,854] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:46:30,555] {logging_mixin.py:109} INFO - [2022-09-02 12:46:30,555] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:46:34,701] {logging_mixin.py:109} INFO - [2022-09-02 12:46:34,701] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:46:37,704] {logging_mixin.py:109} INFO - [2022-09-02 12:46:37,704] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:46:37,705] {logging_mixin.py:109} INFO - [2022-09-02 12:46:37,705] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:46:37,705] {logging_mixin.py:109} INFO - [2022-09-02 12:46:37,705] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:46:45,693] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:46:45,693] {logging_mixin.py:109} INFO - [2022-09-02 12:46:45,693] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:46:45,694] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2091.92it/s]
+[2022-09-02 12:46:45,695] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:46:45,695] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:46:45,726] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:46:45,736] {logging_mixin.py:109} INFO - [2022-09-02 12:46:45,736] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:46:45,740] {logging_mixin.py:109} INFO - [2022-09-02 12:46:45,740] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:46:45,744] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.891 seconds
+[2022-09-02 12:47:16,859] {processor.py:163} INFO - Started process (PID=36936) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:47:16,859] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:47:16,859] {logging_mixin.py:109} INFO - [2022-09-02 12:47:16,859] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:47:17,696] {logging_mixin.py:109} INFO - [2022-09-02 12:47:17,696] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:47:22,352] {logging_mixin.py:109} INFO - [2022-09-02 12:47:22,351] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:47:25,354] {logging_mixin.py:109} INFO - [2022-09-02 12:47:25,354] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:47:25,355] {logging_mixin.py:109} INFO - [2022-09-02 12:47:25,355] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:47:25,356] {logging_mixin.py:109} INFO - [2022-09-02 12:47:25,356] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:47:32,588] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:47:32,588] {logging_mixin.py:109} INFO - [2022-09-02 12:47:32,588] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:47:32,589] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4604.07it/s]
+[2022-09-02 12:47:32,589] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:47:32,589] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:47:32,616] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:47:32,628] {logging_mixin.py:109} INFO - [2022-09-02 12:47:32,628] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:47:32,633] {logging_mixin.py:109} INFO - [2022-09-02 12:47:32,633] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:47:32,636] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.778 seconds
+[2022-09-02 12:48:03,782] {processor.py:163} INFO - Started process (PID=36941) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:48:03,782] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:48:03,782] {logging_mixin.py:109} INFO - [2022-09-02 12:48:03,782] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:48:04,526] {logging_mixin.py:109} INFO - [2022-09-02 12:48:04,526] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:48:08,721] {logging_mixin.py:109} INFO - [2022-09-02 12:48:08,718] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:48:11,723] {logging_mixin.py:109} INFO - [2022-09-02 12:48:11,723] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:48:11,724] {logging_mixin.py:109} INFO - [2022-09-02 12:48:11,724] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:48:11,725] {logging_mixin.py:109} INFO - [2022-09-02 12:48:11,725] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:48:17,059] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:48:17,059] {logging_mixin.py:109} INFO - [2022-09-02 12:48:17,059] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:48:17,059] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3844.46it/s]
+[2022-09-02 12:48:17,060] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:48:17,060] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:48:17,088] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:48:17,098] {logging_mixin.py:109} INFO - [2022-09-02 12:48:17,098] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:48:17,103] {logging_mixin.py:109} INFO - [2022-09-02 12:48:17,103] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:48:17,108] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.326 seconds
+[2022-09-02 12:48:48,429] {processor.py:163} INFO - Started process (PID=36948) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:48:48,429] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:48:48,430] {logging_mixin.py:109} INFO - [2022-09-02 12:48:48,430] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:48:49,327] {logging_mixin.py:109} INFO - [2022-09-02 12:48:49,327] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:48:53,797] {logging_mixin.py:109} INFO - [2022-09-02 12:48:53,797] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:48:56,800] {logging_mixin.py:109} INFO - [2022-09-02 12:48:56,800] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:48:56,801] {logging_mixin.py:109} INFO - [2022-09-02 12:48:56,801] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:48:56,801] {logging_mixin.py:109} INFO - [2022-09-02 12:48:56,801] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:49:01,750] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:49:01,751] {logging_mixin.py:109} INFO - [2022-09-02 12:49:01,750] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:49:01,751] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3880.02it/s]
+[2022-09-02 12:49:01,751] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:49:01,751] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:49:01,775] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:49:01,786] {logging_mixin.py:109} INFO - [2022-09-02 12:49:01,786] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:49:01,790] {logging_mixin.py:109} INFO - [2022-09-02 12:49:01,790] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:49:01,794] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.365 seconds
+[2022-09-02 12:49:32,974] {processor.py:163} INFO - Started process (PID=36973) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:49:32,974] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:49:32,974] {logging_mixin.py:109} INFO - [2022-09-02 12:49:32,974] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:49:33,736] {logging_mixin.py:109} INFO - [2022-09-02 12:49:33,736] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:49:37,878] {logging_mixin.py:109} INFO - [2022-09-02 12:49:37,877] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:49:40,880] {logging_mixin.py:109} INFO - [2022-09-02 12:49:40,879] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:49:40,881] {logging_mixin.py:109} INFO - [2022-09-02 12:49:40,880] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:49:40,881] {logging_mixin.py:109} INFO - [2022-09-02 12:49:40,881] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:49:45,577] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:49:45,577] {logging_mixin.py:109} INFO - [2022-09-02 12:49:45,577] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:49:45,578] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1804.78it/s]
+[2022-09-02 12:49:45,578] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:49:45,578] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:49:45,609] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:49:45,620] {logging_mixin.py:109} INFO - [2022-09-02 12:49:45,620] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:49:45,625] {logging_mixin.py:109} INFO - [2022-09-02 12:49:45,625] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:49:45,629] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.655 seconds
+[2022-09-02 12:50:16,761] {processor.py:163} INFO - Started process (PID=37035) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:50:16,761] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:50:16,761] {logging_mixin.py:109} INFO - [2022-09-02 12:50:16,761] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:50:17,486] {logging_mixin.py:109} INFO - [2022-09-02 12:50:17,486] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:50:21,657] {logging_mixin.py:109} INFO - [2022-09-02 12:50:21,656] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:50:24,659] {logging_mixin.py:109} INFO - [2022-09-02 12:50:24,659] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:50:24,660] {logging_mixin.py:109} INFO - [2022-09-02 12:50:24,660] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:50:24,660] {logging_mixin.py:109} INFO - [2022-09-02 12:50:24,660] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:50:29,244] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:50:29,244] {logging_mixin.py:109} INFO - [2022-09-02 12:50:29,244] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:50:29,244] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4032.98it/s]
+[2022-09-02 12:50:29,244] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:50:29,244] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:50:29,269] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:50:29,279] {logging_mixin.py:109} INFO - [2022-09-02 12:50:29,279] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:50:29,284] {logging_mixin.py:109} INFO - [2022-09-02 12:50:29,284] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:50:29,288] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.527 seconds
+[2022-09-02 12:51:00,442] {processor.py:163} INFO - Started process (PID=37054) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:00,442] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:51:00,442] {logging_mixin.py:109} INFO - [2022-09-02 12:51:00,442] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:01,171] {logging_mixin.py:109} INFO - [2022-09-02 12:51:01,171] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:51:05,296] {logging_mixin.py:109} INFO - [2022-09-02 12:51:05,296] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:51:08,299] {logging_mixin.py:109} INFO - [2022-09-02 12:51:08,298] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:51:08,300] {logging_mixin.py:109} INFO - [2022-09-02 12:51:08,300] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:51:08,300] {logging_mixin.py:109} INFO - [2022-09-02 12:51:08,300] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:51:12,930] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:51:12,931] {logging_mixin.py:109} INFO - [2022-09-02 12:51:12,930] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:51:12,931] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2281.99it/s]
+[2022-09-02 12:51:12,931] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:51:12,931] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:51:12,961] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:12,970] {logging_mixin.py:109} INFO - [2022-09-02 12:51:12,970] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:51:12,974] {logging_mixin.py:109} INFO - [2022-09-02 12:51:12,974] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:51:12,978] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.536 seconds
+[2022-09-02 12:51:44,080] {processor.py:163} INFO - Started process (PID=37059) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:44,080] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:51:44,080] {logging_mixin.py:109} INFO - [2022-09-02 12:51:44,080] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:44,776] {logging_mixin.py:109} INFO - [2022-09-02 12:51:44,775] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:51:49,499] {logging_mixin.py:109} INFO - [2022-09-02 12:51:49,499] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:51:52,502] {logging_mixin.py:109} INFO - [2022-09-02 12:51:52,501] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:51:52,503] {logging_mixin.py:109} INFO - [2022-09-02 12:51:52,503] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:51:52,503] {logging_mixin.py:109} INFO - [2022-09-02 12:51:52,503] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:51:57,875] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:51:57,875] {logging_mixin.py:109} INFO - [2022-09-02 12:51:57,875] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:51:57,875] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3833.92it/s]
+[2022-09-02 12:51:57,876] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:51:57,876] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:51:57,906] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:51:57,915] {logging_mixin.py:109} INFO - [2022-09-02 12:51:57,915] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:51:57,920] {logging_mixin.py:109} INFO - [2022-09-02 12:51:57,920] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:51:57,924] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.845 seconds
+[2022-09-02 12:52:29,052] {processor.py:163} INFO - Started process (PID=37132) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:52:29,052] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:52:29,052] {logging_mixin.py:109} INFO - [2022-09-02 12:52:29,052] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:52:29,767] {logging_mixin.py:109} INFO - [2022-09-02 12:52:29,767] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:52:33,956] {logging_mixin.py:109} INFO - [2022-09-02 12:52:33,956] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:52:36,959] {logging_mixin.py:109} INFO - [2022-09-02 12:52:36,959] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:52:36,959] {logging_mixin.py:109} INFO - [2022-09-02 12:52:36,959] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:52:36,960] {logging_mixin.py:109} INFO - [2022-09-02 12:52:36,960] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:52:41,224] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:52:41,225] {logging_mixin.py:109} INFO - [2022-09-02 12:52:41,225] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:52:41,225] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2236.96it/s]
+[2022-09-02 12:52:41,225] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:52:41,226] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:52:41,257] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:52:41,267] {logging_mixin.py:109} INFO - [2022-09-02 12:52:41,267] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:52:41,272] {logging_mixin.py:109} INFO - [2022-09-02 12:52:41,272] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:52:41,276] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.225 seconds
+[2022-09-02 12:53:12,384] {processor.py:163} INFO - Started process (PID=37186) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:53:12,384] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:53:12,384] {logging_mixin.py:109} INFO - [2022-09-02 12:53:12,384] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:53:13,113] {logging_mixin.py:109} INFO - [2022-09-02 12:53:13,113] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:53:17,858] {logging_mixin.py:109} INFO - [2022-09-02 12:53:17,858] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:53:20,860] {logging_mixin.py:109} INFO - [2022-09-02 12:53:20,860] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:53:20,861] {logging_mixin.py:109} INFO - [2022-09-02 12:53:20,861] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:53:20,861] {logging_mixin.py:109} INFO - [2022-09-02 12:53:20,861] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:53:27,889] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:53:27,889] {logging_mixin.py:109} INFO - [2022-09-02 12:53:27,889] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:53:27,889] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3004.52it/s]
+[2022-09-02 12:53:27,890] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:53:27,890] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:53:27,921] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:53:27,933] {logging_mixin.py:109} INFO - [2022-09-02 12:53:27,932] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:53:27,938] {logging_mixin.py:109} INFO - [2022-09-02 12:53:27,938] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:53:27,942] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.558 seconds
+[2022-09-02 12:53:59,096] {processor.py:163} INFO - Started process (PID=37239) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:53:59,096] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:53:59,096] {logging_mixin.py:109} INFO - [2022-09-02 12:53:59,096] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:53:59,831] {logging_mixin.py:109} INFO - [2022-09-02 12:53:59,831] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:54:04,073] {logging_mixin.py:109} INFO - [2022-09-02 12:54:04,073] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:54:07,075] {logging_mixin.py:109} INFO - [2022-09-02 12:54:07,075] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:54:07,077] {logging_mixin.py:109} INFO - [2022-09-02 12:54:07,076] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:54:07,077] {logging_mixin.py:109} INFO - [2022-09-02 12:54:07,077] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:54:11,134] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:54:11,134] {logging_mixin.py:109} INFO - [2022-09-02 12:54:11,134] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:54:11,135] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3905.31it/s]
+[2022-09-02 12:54:11,135] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:54:11,135] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:54:11,162] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:54:11,172] {logging_mixin.py:109} INFO - [2022-09-02 12:54:11,171] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:54:11,176] {logging_mixin.py:109} INFO - [2022-09-02 12:54:11,176] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:54:11,180] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.085 seconds
+[2022-09-02 12:54:42,276] {processor.py:163} INFO - Started process (PID=37270) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:54:42,276] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:54:42,276] {logging_mixin.py:109} INFO - [2022-09-02 12:54:42,276] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:54:42,982] {logging_mixin.py:109} INFO - [2022-09-02 12:54:42,982] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:54:47,591] {logging_mixin.py:109} INFO - [2022-09-02 12:54:47,590] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:54:50,593] {logging_mixin.py:109} INFO - [2022-09-02 12:54:50,593] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:54:50,594] {logging_mixin.py:109} INFO - [2022-09-02 12:54:50,594] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:54:50,594] {logging_mixin.py:109} INFO - [2022-09-02 12:54:50,594] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:54:55,273] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:54:55,274] {logging_mixin.py:109} INFO - [2022-09-02 12:54:55,274] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:54:55,274] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2293.22it/s]
+[2022-09-02 12:54:55,274] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:54:55,275] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:54:55,304] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:54:55,315] {logging_mixin.py:109} INFO - [2022-09-02 12:54:55,315] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:54:55,320] {logging_mixin.py:109} INFO - [2022-09-02 12:54:55,319] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:54:55,323] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 13.048 seconds
+[2022-09-02 12:55:26,490] {processor.py:163} INFO - Started process (PID=37338) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:55:26,490] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:55:26,491] {logging_mixin.py:109} INFO - [2022-09-02 12:55:26,491] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:55:27,203] {logging_mixin.py:109} INFO - [2022-09-02 12:55:27,203] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:55:31,730] {logging_mixin.py:109} INFO - [2022-09-02 12:55:31,729] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:55:34,733] {logging_mixin.py:109} INFO - [2022-09-02 12:55:34,733] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:55:34,734] {logging_mixin.py:109} INFO - [2022-09-02 12:55:34,734] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:55:34,735] {logging_mixin.py:109} INFO - [2022-09-02 12:55:34,735] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:55:40,527] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:55:40,528] {logging_mixin.py:109} INFO - [2022-09-02 12:55:40,528] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:55:40,528] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2283.24it/s]
+[2022-09-02 12:55:40,528] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:55:40,529] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:55:40,559] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:55:40,570] {logging_mixin.py:109} INFO - [2022-09-02 12:55:40,570] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:55:40,575] {logging_mixin.py:109} INFO - [2022-09-02 12:55:40,575] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:55:40,579] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.089 seconds
+[2022-09-02 12:56:10,435] {processor.py:163} INFO - Started process (PID=37357) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:56:10,435] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:56:10,435] {logging_mixin.py:109} INFO - [2022-09-02 12:56:10,435] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:56:11,171] {logging_mixin.py:109} INFO - [2022-09-02 12:56:11,171] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:56:15,358] {logging_mixin.py:109} INFO - [2022-09-02 12:56:15,358] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:56:18,360] {logging_mixin.py:109} INFO - [2022-09-02 12:56:18,359] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:56:18,361] {logging_mixin.py:109} INFO - [2022-09-02 12:56:18,361] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:56:18,361] {logging_mixin.py:109} INFO - [2022-09-02 12:56:18,361] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:56:23,100] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:56:23,100] {logging_mixin.py:109} INFO - [2022-09-02 12:56:23,100] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:56:23,100] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4466.78it/s]
+[2022-09-02 12:56:23,100] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:56:23,101] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:56:23,131] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:56:23,141] {logging_mixin.py:109} INFO - [2022-09-02 12:56:23,141] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:56:23,146] {logging_mixin.py:109} INFO - [2022-09-02 12:56:23,146] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:56:23,150] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.717 seconds
+[2022-09-02 12:56:54,310] {processor.py:163} INFO - Started process (PID=37369) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:56:54,311] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:56:54,311] {logging_mixin.py:109} INFO - [2022-09-02 12:56:54,311] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:56:55,017] {logging_mixin.py:109} INFO - [2022-09-02 12:56:55,017] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:56:59,574] {logging_mixin.py:109} INFO - [2022-09-02 12:56:59,574] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:57:02,576] {logging_mixin.py:109} INFO - [2022-09-02 12:57:02,575] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:57:02,577] {logging_mixin.py:109} INFO - [2022-09-02 12:57:02,577] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:57:02,578] {logging_mixin.py:109} INFO - [2022-09-02 12:57:02,577] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:57:08,499] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:57:08,499] {logging_mixin.py:109} INFO - [2022-09-02 12:57:08,499] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:57:08,499] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3666.35it/s]
+[2022-09-02 12:57:08,499] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:57:08,499] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:57:08,526] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:57:08,538] {logging_mixin.py:109} INFO - [2022-09-02 12:57:08,537] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:57:08,542] {logging_mixin.py:109} INFO - [2022-09-02 12:57:08,542] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:57:08,546] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.236 seconds
+[2022-09-02 12:57:39,660] {processor.py:163} INFO - Started process (PID=37376) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:57:39,660] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:57:39,661] {logging_mixin.py:109} INFO - [2022-09-02 12:57:39,661] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:57:40,394] {logging_mixin.py:109} INFO - [2022-09-02 12:57:40,393] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:57:47,192] {logging_mixin.py:109} INFO - [2022-09-02 12:57:47,191] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:57:50,194] {logging_mixin.py:109} INFO - [2022-09-02 12:57:50,194] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:57:50,195] {logging_mixin.py:109} INFO - [2022-09-02 12:57:50,195] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:57:50,195] {logging_mixin.py:109} INFO - [2022-09-02 12:57:50,195] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:57:54,280] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:57:54,280] {logging_mixin.py:109} INFO - [2022-09-02 12:57:54,280] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:57:54,281] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1672.37it/s]
+[2022-09-02 12:57:54,281] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:57:54,281] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:57:54,312] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:57:54,322] {logging_mixin.py:109} INFO - [2022-09-02 12:57:54,321] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:57:54,326] {logging_mixin.py:109} INFO - [2022-09-02 12:57:54,326] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:57:54,331] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.671 seconds
+[2022-09-02 12:58:25,445] {processor.py:163} INFO - Started process (PID=37384) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:58:25,445] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:58:25,445] {logging_mixin.py:109} INFO - [2022-09-02 12:58:25,445] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:58:26,155] {logging_mixin.py:109} INFO - [2022-09-02 12:58:26,155] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:58:31,118] {logging_mixin.py:109} INFO - [2022-09-02 12:58:31,118] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:58:34,121] {logging_mixin.py:109} INFO - [2022-09-02 12:58:34,120] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:58:34,123] {logging_mixin.py:109} INFO - [2022-09-02 12:58:34,123] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:58:34,123] {logging_mixin.py:109} INFO - [2022-09-02 12:58:34,123] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:58:41,529] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:58:41,530] {logging_mixin.py:109} INFO - [2022-09-02 12:58:41,530] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:58:41,530] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2137.77it/s]
+[2022-09-02 12:58:41,531] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:58:41,531] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:58:41,560] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:58:41,571] {logging_mixin.py:109} INFO - [2022-09-02 12:58:41,571] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:58:41,575] {logging_mixin.py:109} INFO - [2022-09-02 12:58:41,575] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:58:41,579] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 16.134 seconds
+[2022-09-02 12:59:12,705] {processor.py:163} INFO - Started process (PID=37395) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:59:12,706] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:59:12,706] {logging_mixin.py:109} INFO - [2022-09-02 12:59:12,706] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:59:13,419] {logging_mixin.py:109} INFO - [2022-09-02 12:59:13,419] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 12:59:18,486] {logging_mixin.py:109} INFO - [2022-09-02 12:59:18,486] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:59:21,489] {logging_mixin.py:109} INFO - [2022-09-02 12:59:21,488] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:59:21,490] {logging_mixin.py:109} INFO - [2022-09-02 12:59:21,489] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:59:21,490] {logging_mixin.py:109} INFO - [2022-09-02 12:59:21,490] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:59:27,378] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:59:27,378] {logging_mixin.py:109} INFO - [2022-09-02 12:59:27,378] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:59:27,378] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3226.39it/s]
+[2022-09-02 12:59:27,379] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:59:27,379] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 12:59:27,409] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:59:27,419] {logging_mixin.py:109} INFO - [2022-09-02 12:59:27,418] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 12:59:27,423] {logging_mixin.py:109} INFO - [2022-09-02 12:59:27,423] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 12:59:27,428] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.723 seconds
+[2022-09-02 12:59:58,807] {processor.py:163} INFO - Started process (PID=37467) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:59:58,807] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 12:59:58,807] {logging_mixin.py:109} INFO - [2022-09-02 12:59:58,807] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 12:59:59,734] {logging_mixin.py:109} INFO - [2022-09-02 12:59:59,734] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:00:04,340] {logging_mixin.py:109} INFO - [2022-09-02 13:00:04,340] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:00:07,343] {logging_mixin.py:109} INFO - [2022-09-02 13:00:07,343] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:00:07,344] {logging_mixin.py:109} INFO - [2022-09-02 13:00:07,344] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:00:07,344] {logging_mixin.py:109} INFO - [2022-09-02 13:00:07,344] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:00:14,164] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:00:14,164] {logging_mixin.py:109} INFO - [2022-09-02 13:00:14,164] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:00:14,164] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4405.78it/s]
+[2022-09-02 13:00:14,164] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:00:14,165] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:00:14,192] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:00:14,203] {logging_mixin.py:109} INFO - [2022-09-02 13:00:14,203] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:00:14,208] {logging_mixin.py:109} INFO - [2022-09-02 13:00:14,208] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:00:14,212] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.405 seconds
+[2022-09-02 13:00:45,324] {processor.py:163} INFO - Started process (PID=37487) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:00:45,324] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:00:45,324] {logging_mixin.py:109} INFO - [2022-09-02 13:00:45,324] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:00:46,050] {logging_mixin.py:109} INFO - [2022-09-02 13:00:46,050] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:00:50,426] {logging_mixin.py:109} INFO - [2022-09-02 13:00:50,426] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:00:53,428] {logging_mixin.py:109} INFO - [2022-09-02 13:00:53,428] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:00:53,429] {logging_mixin.py:109} INFO - [2022-09-02 13:00:53,429] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:00:53,430] {logging_mixin.py:109} INFO - [2022-09-02 13:00:53,430] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:00:58,146] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:00:58,146] {logging_mixin.py:109} INFO - [2022-09-02 13:00:58,146] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:00:58,146] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3379.78it/s]
+[2022-09-02 13:00:58,146] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:00:58,146] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:00:58,179] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:00:58,189] {logging_mixin.py:109} INFO - [2022-09-02 13:00:58,189] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:00:58,195] {logging_mixin.py:109} INFO - [2022-09-02 13:00:58,195] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:00:58,199] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.876 seconds
+[2022-09-02 13:01:29,362] {processor.py:163} INFO - Started process (PID=37540) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:01:29,362] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:01:29,363] {logging_mixin.py:109} INFO - [2022-09-02 13:01:29,363] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:01:30,077] {logging_mixin.py:109} INFO - [2022-09-02 13:01:30,077] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:01:40,185] {logging_mixin.py:109} INFO - [2022-09-02 13:01:40,185] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:01:43,187] {logging_mixin.py:109} INFO - [2022-09-02 13:01:43,187] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:01:43,188] {logging_mixin.py:109} INFO - [2022-09-02 13:01:43,188] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:01:43,189] {logging_mixin.py:109} INFO - [2022-09-02 13:01:43,189] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:01:47,671] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:01:47,671] {logging_mixin.py:109} INFO - [2022-09-02 13:01:47,671] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:01:47,672] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2122.62it/s]
+[2022-09-02 13:01:47,672] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:01:47,672] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:01:47,699] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:01:47,709] {logging_mixin.py:109} INFO - [2022-09-02 13:01:47,709] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:01:47,714] {logging_mixin.py:109} INFO - [2022-09-02 13:01:47,714] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:01:47,718] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 18.356 seconds
+[2022-09-02 13:02:18,865] {processor.py:163} INFO - Started process (PID=37557) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:02:18,865] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:02:18,866] {logging_mixin.py:109} INFO - [2022-09-02 13:02:18,865] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:02:19,598] {logging_mixin.py:109} INFO - [2022-09-02 13:02:19,598] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:02:24,303] {logging_mixin.py:109} INFO - [2022-09-02 13:02:24,303] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:02:27,310] {logging_mixin.py:109} INFO - [2022-09-02 13:02:27,309] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:02:27,311] {logging_mixin.py:109} INFO - [2022-09-02 13:02:27,311] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:02:27,312] {logging_mixin.py:109} INFO - [2022-09-02 13:02:27,312] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:02:34,011] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:02:34,012] {logging_mixin.py:109} INFO - [2022-09-02 13:02:34,012] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:02:34,012] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2137.77it/s]
+[2022-09-02 13:02:34,013] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:02:34,013] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:02:34,048] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:02:34,059] {logging_mixin.py:109} INFO - [2022-09-02 13:02:34,059] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:02:34,063] {logging_mixin.py:109} INFO - [2022-09-02 13:02:34,063] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:02:34,067] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 15.202 seconds
+[2022-09-02 13:03:05,172] {processor.py:163} INFO - Started process (PID=37561) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:03:05,172] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:03:05,172] {logging_mixin.py:109} INFO - [2022-09-02 13:03:05,172] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:03:05,889] {logging_mixin.py:109} INFO - [2022-09-02 13:03:05,888] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:03:10,047] {logging_mixin.py:109} INFO - [2022-09-02 13:03:10,047] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:03:13,050] {logging_mixin.py:109} INFO - [2022-09-02 13:03:13,050] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:03:13,051] {logging_mixin.py:109} INFO - [2022-09-02 13:03:13,051] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:03:13,051] {logging_mixin.py:109} INFO - [2022-09-02 13:03:13,051] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:03:19,588] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:03:19,589] {logging_mixin.py:109} INFO - [2022-09-02 13:03:19,589] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:03:19,589] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3758.34it/s]
+[2022-09-02 13:03:19,590] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:03:19,590] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:03:19,619] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:03:19,631] {logging_mixin.py:109} INFO - [2022-09-02 13:03:19,631] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:03:19,636] {logging_mixin.py:109} INFO - [2022-09-02 13:03:19,635] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:03:19,640] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 14.468 seconds
+[2022-09-02 13:03:50,808] {processor.py:163} INFO - Started process (PID=37593) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:03:50,808] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:03:50,809] {logging_mixin.py:109} INFO - [2022-09-02 13:03:50,809] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:03:51,552] {logging_mixin.py:109} INFO - [2022-09-02 13:03:51,552] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:03:55,978] {logging_mixin.py:109} INFO - [2022-09-02 13:03:55,978] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:03:58,981] {logging_mixin.py:109} INFO - [2022-09-02 13:03:58,980] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:03:58,981] {logging_mixin.py:109} INFO - [2022-09-02 13:03:58,981] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:03:58,982] {logging_mixin.py:109} INFO - [2022-09-02 13:03:58,982] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:04:03,327] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:04:03,328] {logging_mixin.py:109} INFO - [2022-09-02 13:04:03,328] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:04:03,328] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 2101.35it/s]
+[2022-09-02 13:04:03,329] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:04:03,329] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:04:03,362] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:04:03,372] {logging_mixin.py:109} INFO - [2022-09-02 13:04:03,371] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:04:03,376] {logging_mixin.py:109} INFO - [2022-09-02 13:04:03,376] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:04:03,380] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.572 seconds
+[2022-09-02 13:04:34,533] {processor.py:163} INFO - Started process (PID=37613) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:04:34,533] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:04:34,533] {logging_mixin.py:109} INFO - [2022-09-02 13:04:34,533] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:04:35,272] {logging_mixin.py:109} INFO - [2022-09-02 13:04:35,272] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:04:40,222] {logging_mixin.py:109} INFO - [2022-09-02 13:04:40,221] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:04:43,226] {logging_mixin.py:109} INFO - [2022-09-02 13:04:43,225] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:04:43,227] {logging_mixin.py:109} INFO - [2022-09-02 13:04:43,227] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:04:43,227] {logging_mixin.py:109} INFO - [2022-09-02 13:04:43,227] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:04:50,928] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:04:50,929] {logging_mixin.py:109} INFO - [2022-09-02 13:04:50,929] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:04:50,929] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3847.99it/s]
+[2022-09-02 13:04:50,929] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:04:50,929] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:04:50,959] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:04:50,969] {logging_mixin.py:109} INFO - [2022-09-02 13:04:50,969] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:04:50,974] {logging_mixin.py:109} INFO - [2022-09-02 13:04:50,973] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:04:50,977] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 16.444 seconds
+[2022-09-02 13:05:22,124] {processor.py:163} INFO - Started process (PID=37637) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:05:22,124] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:05:22,124] {logging_mixin.py:109} INFO - [2022-09-02 13:05:22,124] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:05:22,849] {logging_mixin.py:109} INFO - [2022-09-02 13:05:22,849] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:05:27,318] {logging_mixin.py:109} INFO - [2022-09-02 13:05:27,317] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:05:30,320] {logging_mixin.py:109} INFO - [2022-09-02 13:05:30,320] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:05:30,321] {logging_mixin.py:109} INFO - [2022-09-02 13:05:30,321] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:05:30,322] {logging_mixin.py:109} INFO - [2022-09-02 13:05:30,322] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:05:34,696] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:05:34,697] {logging_mixin.py:109} INFO - [2022-09-02 13:05:34,697] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:05:34,697] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 3006.67it/s]
+[2022-09-02 13:05:34,697] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:05:34,697] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:05:34,731] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:05:34,741] {logging_mixin.py:109} INFO - [2022-09-02 13:05:34,741] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:05:34,746] {logging_mixin.py:109} INFO - [2022-09-02 13:05:34,745] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:05:34,749] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 12.626 seconds
+[2022-09-02 13:06:05,897] {processor.py:163} INFO - Started process (PID=37688) to work on /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:06:05,897] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py for tasks to queue
+[2022-09-02 13:06:05,897] {logging_mixin.py:109} INFO - [2022-09-02 13:06:05,897] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:06:06,652] {logging_mixin.py:109} INFO - [2022-09-02 13:06:06,652] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-02 13:06:11,183] {logging_mixin.py:109} INFO - [2022-09-02 13:06:11,183] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 13:06:14,185] {logging_mixin.py:109} INFO - [2022-09-02 13:06:14,185] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 13:06:14,186] {logging_mixin.py:109} INFO - [2022-09-02 13:06:14,186] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 13:06:14,186] {logging_mixin.py:109} INFO - [2022-09-02 13:06:14,186] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 13:06:23,752] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 13:06:23,753] {logging_mixin.py:109} INFO - [2022-09-02 13:06:23,753] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 13:06:23,753] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 4524.60it/s]
+[2022-09-02 13:06:23,753] {logging_mixin.py:109} WARNING - 
+[2022-09-02 13:06:23,753] {logging_mixin.py:109} INFO - Done?, please check Big Query
+[2022-09-02 13:06:23,786] {processor.py:654} INFO - DAG(s) dict_keys(['ETL_Examples']) retrieved from /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py
+[2022-09-02 13:06:23,797] {logging_mixin.py:109} INFO - [2022-09-02 13:06:23,797] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-02 13:06:23,802] {logging_mixin.py:109} INFO - [2022-09-02 13:06:23,802] {dag.py:2935} INFO - Setting next_dagrun for ETL_Examples to 2022-08-28T00:00:00+00:00
+[2022-09-02 13:06:23,806] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/Pushtobigquery2.py took 17.910 seconds

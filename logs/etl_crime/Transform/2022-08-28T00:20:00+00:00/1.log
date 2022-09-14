@@ -1,0 +1,61 @@
+[2022-09-02 12:18:16,903] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Transform scheduled__2022-08-28T00:20:00+00:00 [queued]>
+[2022-09-02 12:18:16,906] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Transform scheduled__2022-08-28T00:20:00+00:00 [queued]>
+[2022-09-02 12:18:16,906] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:18:16,906] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-02 12:18:16,906] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:18:16,911] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Transform> on 2022-08-28 00:20:00+00:00
+[2022-09-02 12:18:16,918] {standard_task_runner.py:52} INFO - Started process 36481 to run task
+[2022-09-02 12:18:16,922] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_crime', 'Transform', 'scheduled__2022-08-28T00:20:00+00:00', '--job-id', '538', '--raw', '--subdir', 'DAGS_FOLDER/etl_bigquery.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpri72bxqm', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpfk4md2x0']
+[2022-09-02 12:18:16,923] {standard_task_runner.py:77} INFO - Job 538: Subtask Transform
+[2022-09-02 12:18:16,944] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_crime.Transform scheduled__2022-08-28T00:20:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-02 12:18:16,966] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_crime
+AIRFLOW_CTX_TASK_ID=Transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T00:20:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T00:20:00+00:00
+[2022-09-02 12:18:17,181] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:18:17,181] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:18:17,181] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:18:17,181] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:18:18,296] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-02 12:18:18,514] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 920.92rows/s]
+[2022-09-02 12:18:18,515] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 917.93rows/s]
+[2022-09-02 12:18:18,515] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:18:18,522] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-02 12:18:18,531] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-02 12:18:18,566] {logging_mixin.py:109} INFO - Index(['incident_report_number', 'crime_type', 'location_type', 'address',
+       'zip_code', 'occurred_date', 'ocurred_time', 'reported_date',
+       'reported_time', 'new_occurred_time', 'std_time_new_occurred_time',
+       'new_reported_time', 'std_time_new_reported_time'],
+      dtype='object')
+[2022-09-02 12:18:18,566] {logging_mixin.py:109} INFO - Index(['incident_report_number', 'crime_type', 'location_type', 'address',
+       'zip_code', 'occurred_date', 'ocurred_time', 'reported_date',
+       'reported_time', 'std_time_new_occurred_time',
+       'std_time_new_reported_time'],
+      dtype='object')
+[2022-09-02 12:18:24,733] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:18:24,734] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:18:24,736] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 905.12it/s]
+[2022-09-02 12:18:24,737] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:18:24,738] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-02 12:18:24,739] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-02 12:18:24,755] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_crime, task_id=Transform, execution_date=20220828T002000, start_date=20220902T171816, end_date=20220902T171824
+[2022-09-02 12:18:24,782] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-02 12:18:24,791] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

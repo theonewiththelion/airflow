@@ -1,0 +1,50 @@
+[2022-09-03 13:52:44,879] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.Extraction scheduled__2022-09-03T05:00:00+00:00 [queued]>
+[2022-09-03 13:52:44,883] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.Extraction scheduled__2022-09-03T05:00:00+00:00 [queued]>
+[2022-09-03 13:52:44,883] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 13:52:44,883] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 13:52:44,883] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 13:52:44,887] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-09-03 05:00:00+00:00
+[2022-09-03 13:52:44,894] {standard_task_runner.py:52} INFO - Started process 40896 to run task
+[2022-09-03 13:52:44,898] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'Extraction', 'scheduled__2022-09-03T05:00:00+00:00', '--job-id', '601', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpnk8zpc9a', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpxkp6kdlg']
+[2022-09-03 13:52:44,900] {standard_task_runner.py:77} INFO - Job 601: Subtask Extraction
+[2022-09-03 13:52:44,923] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.Extraction scheduled__2022-09-03T05:00:00+00:00 [running]> on host Jonathans-MacBook-Pro.local
+[2022-09-03 13:52:44,945] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T05:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T05:00:00+00:00
+[2022-09-03 13:52:45,952] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222391738  ...     2353
+1               20222391646  ...     2346
+2               20222391707  ...       27
+3               20222391708  ...     2340
+4               20222391682  ...       37
+..                      ...  ...      ...
+195             20222381037  ...     1626
+196             20222381066  ...     1623
+197             20222381057  ...     1601
+198             20222380989  ...     1559
+199             20222381059  ...     1630
+
+[200 rows x 9 columns]
+[2022-09-03 13:52:45,952] {python.py:175} INFO - Done. Returned value was:      incident_report_number  ... rep_time
+0               20222391738  ...     2353
+1               20222391646  ...     2346
+2               20222391707  ...       27
+3               20222391708  ...     2340
+4               20222391682  ...       37
+..                      ...  ...      ...
+195             20222381037  ...     1626
+196             20222381066  ...     1623
+197             20222381057  ...     1601
+198             20222380989  ...     1559
+199             20222381059  ...     1630
+
+[200 rows x 9 columns]
+[2022-09-03 13:52:45,965] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=Extraction, execution_date=20220903T050000, start_date=20220903T185244, end_date=20220903T185245
+[2022-09-03 13:52:46,015] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 13:52:46,028] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

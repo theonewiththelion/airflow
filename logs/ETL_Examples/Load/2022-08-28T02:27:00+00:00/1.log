@@ -1,0 +1,2 @@
+[2022-08-28 15:05:37,476] {taskinstance.py:1022} INFO - Dependencies not met for <TaskInstance: ETL_Examples.Load scheduled__2022-08-28T02:27:00+00:00 [queued]>, dependency 'Trigger Rule' FAILED: Task's trigger rule 'all_success' requires all upstream tasks to have succeeded, but found 1 non-success(es). upstream_tasks_state={'total': 1, 'successes': 0, 'skipped': 0, 'failed': 0, 'upstream_failed': 0, 'done': 0}, upstream_task_ids={'Transform'}
+[2022-08-28 15:05:37,476] {local_task_job.py:99} INFO - Task is not able to be run

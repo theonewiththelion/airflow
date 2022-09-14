@@ -1,0 +1,262 @@
+[2022-09-02 12:34:27,092] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Transform scheduled__2022-09-02T00:20:00+00:00 [queued]>
+[2022-09-02 12:34:27,095] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Transform scheduled__2022-09-02T00:20:00+00:00 [queued]>
+[2022-09-02 12:34:27,095] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:34:27,095] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-02 12:34:27,095] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:34:27,099] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Transform> on 2022-09-02 00:20:00+00:00
+[2022-09-02 12:34:27,106] {standard_task_runner.py:52} INFO - Started process 36764 to run task
+[2022-09-02 12:34:27,110] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_crime', 'Transform', 'scheduled__2022-09-02T00:20:00+00:00', '--job-id', '565', '--raw', '--subdir', 'DAGS_FOLDER/etl_bigquery.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp9ede9n90', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpy7ud41ia']
+[2022-09-02 12:34:27,111] {standard_task_runner.py:77} INFO - Job 565: Subtask Transform
+[2022-09-02 12:34:27,135] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_crime.Transform scheduled__2022-09-02T00:20:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-02 12:34:27,156] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_crime
+AIRFLOW_CTX_TASK_ID=Transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-02T00:20:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-02T00:20:00+00:00
+[2022-09-02 12:34:30,369] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:34:32,174] {local_task_job.py:211} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2022-09-02 12:34:32,179] {process_utils.py:120} INFO - Sending Signals.SIGTERM to group 36764. PIDs of all processes in the group: [36764]
+[2022-09-02 12:34:32,179] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 36764
+[2022-09-02 12:34:32,180] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-09-02 12:34:32,185] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_bigquery.py", line 84, in transformation
+    df_transformed_austin_crime = pandas_gbq.read_gbq(sql, project_id='crafty-shield-359406')
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 909, in read_gbq
+    connector = GbqConnector(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 317, in __init__
+    self.credentials, default_project = auth.get_credentials(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/auth.py", line 44, in get_credentials
+    credentials, default_project_id = pydata_google_auth.default(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 99, in default
+    credentials, default_project = get_application_default_credentials(scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 140, in get_application_default_credentials
+    credentials, project = google.auth.default(scopes=scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 583, in default
+    credentials, project_id = checker()
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 579, in <lambda>
+    lambda: _get_gce_credentials(request),
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 281, in _get_gce_credentials
+    if _metadata.ping(request=request):
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/compute_engine/_metadata.py", line 85, in ping
+    response = request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/transport/_http_client.py", line 106, in __call__
+    connection.request(method, path, body=body, headers=headers, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1331, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 946, in connect
+    self.sock = self._create_connection(
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1410, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-09-02 12:34:32,190] {taskinstance.py:1267} INFO - Marking task as FAILED. dag_id=etl_crime, task_id=Transform, execution_date=20220902T002000, start_date=20220902T173427, end_date=20220902T173432
+[2022-09-02 12:34:32,196] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-09-02 12:34:32,197] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-09-02 12:34:32,198] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-09-02 12:34:32,198] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-09-02 12:34:32,199] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,199] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,200] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,200] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-09-02 12:34:32,201] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,201] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,202] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,202] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-09-02 12:34:32,207] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-09-02 12:34:32,208] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-02 12:34:32,208] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-02 12:34:32,211] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-09-02 12:34:32,211] {email.py:208} INFO - Email alerting: attempt 1
+[2022-09-02 12:34:32,212] {taskinstance.py:1751} ERROR - Failed to send email to: jonathan.dejesus.azor@gmail.com
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_bigquery.py", line 84, in transformation
+    df_transformed_austin_crime = pandas_gbq.read_gbq(sql, project_id='crafty-shield-359406')
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 909, in read_gbq
+    connector = GbqConnector(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 317, in __init__
+    self.credentials, default_project = auth.get_credentials(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/auth.py", line 44, in get_credentials
+    credentials, default_project_id = pydata_google_auth.default(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 99, in default
+    credentials, default_project = get_application_default_credentials(scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 140, in get_application_default_credentials
+    credentials, project = google.auth.default(scopes=scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 583, in default
+    credentials, project_id = checker()
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 579, in <lambda>
+    lambda: _get_gce_credentials(request),
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 281, in _get_gce_credentials
+    if _metadata.ping(request=request):
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/compute_engine/_metadata.py", line 85, in ping
+    response = request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/transport/_http_client.py", line 106, in __call__
+    connection.request(method, path, body=body, headers=headers, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1331, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 946, in connect
+    self.sock = self._create_connection(
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1410, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2093, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1749, in handle_failure
+    self.email_alert(error)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2095, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+[2022-09-02 12:34:32,219] {standard_task_runner.py:89} ERROR - Failed to execute job 565 for task Transform
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/theonewiththelion/airflow/dags/etl_bigquery.py", line 84, in transformation
+    df_transformed_austin_crime = pandas_gbq.read_gbq(sql, project_id='crafty-shield-359406')
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 909, in read_gbq
+    connector = GbqConnector(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/gbq.py", line 317, in __init__
+    self.credentials, default_project = auth.get_credentials(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pandas_gbq/auth.py", line 44, in get_credentials
+    credentials, default_project_id = pydata_google_auth.default(
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 99, in default
+    credentials, default_project = get_application_default_credentials(scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/pydata_google_auth/auth.py", line 140, in get_application_default_credentials
+    credentials, project = google.auth.default(scopes=scopes)
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 583, in default
+    credentials, project_id = checker()
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 579, in <lambda>
+    lambda: _get_gce_credentials(request),
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/_default.py", line 281, in _get_gce_credentials
+    if _metadata.ping(request=request):
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/compute_engine/_metadata.py", line 85, in ping
+    response = request(
+  File "/opt/anaconda3/lib/python3.9/site-packages/google/auth/transport/_http_client.py", line 106, in __call__
+    connection.request(method, path, body=body, headers=headers, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1285, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1331, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1280, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 1040, in _send_output
+    self.send(msg)
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 980, in send
+    self.connect()
+  File "/opt/anaconda3/lib/python3.9/http/client.py", line 946, in connect
+    self.sock = self._create_connection(
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1410, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-09-02 12:34:32,240] {process_utils.py:70} INFO - Process psutil.Process(pid=36764, status='terminated', exitcode=1, started='12:34:27') (36764) terminated with exit code 1

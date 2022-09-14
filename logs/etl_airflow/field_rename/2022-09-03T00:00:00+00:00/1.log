@@ -1,0 +1,546 @@
+[2022-09-03 13:56:58,487] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 13:56:58,490] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 13:56:58,490] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 13:56:58,490] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 13:56:58,490] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 13:56:58,495] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 13:56:58,500] {standard_task_runner.py:52} INFO - Started process 41094 to run task
+[2022-09-03 13:56:58,505] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '616', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpbreb2vtl', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpxtgwx2yj']
+[2022-09-03 13:56:58,506] {standard_task_runner.py:77} INFO - Job 616: Subtask field_rename
+[2022-09-03 13:56:58,528] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 13:56:58,550] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 13:56:58,766] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 13:56:58,767] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 13:56:58,767] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 13:56:58,767] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 13:56:59,946] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 13:57:00,199] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 796.10rows/s]
+[2022-09-03 13:57:00,199] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 793.93rows/s]
+[2022-09-03 13:57:00,199] {logging_mixin.py:109} WARNING - 
+[2022-09-03 13:57:00,213] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 13:57:00,222] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 13:57:04,541] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 13:57:04,542] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 13:57:04,544] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 807.68it/s]
+[2022-09-03 13:57:04,545] {logging_mixin.py:109} WARNING - 
+[2022-09-03 13:57:04,546] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 13:57:04,546] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 13:57:04,563] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T185658, end_date=20220903T185704
+[2022-09-03 13:57:04,597] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 13:57:04,608] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:06:21,483] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:06:21,487] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:06:21,487] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:06:21,487] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:06:21,487] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:06:21,491] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:06:21,497] {standard_task_runner.py:52} INFO - Started process 41379 to run task
+[2022-09-03 14:06:21,502] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '652', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpubooki6_', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp7dgz49mc']
+[2022-09-03 14:06:21,503] {standard_task_runner.py:77} INFO - Job 652: Subtask field_rename
+[2022-09-03 14:06:21,525] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:06:21,545] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:06:24,764] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:06:27,770] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:06:27,771] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:06:27,772] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:06:28,985] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:06:29,205] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 914.50rows/s]
+[2022-09-03 14:06:29,207] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 907.14rows/s]
+[2022-09-03 14:06:29,207] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:06:29,219] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:06:29,228] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:06:33,529] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:06:33,530] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:06:33,532] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1067.25it/s]
+[2022-09-03 14:06:33,532] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:06:33,533] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:06:33,534] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:06:33,554] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T190621, end_date=20220903T190633
+[2022-09-03 14:06:33,588] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:06:33,599] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:16:10,456] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:16:10,459] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:16:10,459] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:16:10,459] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:16:10,459] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:16:10,463] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:16:10,470] {standard_task_runner.py:52} INFO - Started process 41571 to run task
+[2022-09-03 14:16:10,474] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '658', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmphsjsicuo', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpmayo_1vh']
+[2022-09-03 14:16:10,476] {standard_task_runner.py:77} INFO - Job 658: Subtask field_rename
+[2022-09-03 14:16:10,496] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:16:10,517] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:16:10,725] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:16:10,726] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:16:10,726] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:16:10,726] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:16:11,847] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:16:12,119] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 738.05rows/s]
+[2022-09-03 14:16:12,121] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 733.43rows/s]
+[2022-09-03 14:16:12,121] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:16:12,131] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:16:12,142] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:16:18,278] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:16:18,279] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:16:18,280] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1861.65it/s]
+[2022-09-03 14:16:18,280] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:16:18,281] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:16:18,281] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:16:18,302] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T191610, end_date=20220903T191618
+[2022-09-03 14:16:18,337] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:16:18,349] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:17:42,183] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:17:42,187] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:17:42,187] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:17:42,187] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:17:42,187] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:17:42,191] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:17:42,199] {standard_task_runner.py:52} INFO - Started process 41597 to run task
+[2022-09-03 14:17:42,203] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '661', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpswdg7sj5', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpcxqxpshq']
+[2022-09-03 14:17:42,205] {standard_task_runner.py:77} INFO - Job 661: Subtask field_rename
+[2022-09-03 14:17:42,231] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:17:42,253] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:17:45,464] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:17:48,467] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:17:48,469] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:17:48,470] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:17:49,681] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:17:49,911] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 885.24rows/s]
+[2022-09-03 14:17:49,911] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 882.50rows/s]
+[2022-09-03 14:17:49,912] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:17:49,924] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:17:49,933] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:17:54,321] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:17:54,323] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:17:54,324] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1432.97it/s]
+[2022-09-03 14:17:54,325] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:17:54,326] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:17:54,326] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:17:54,342] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T191742, end_date=20220903T191754
+[2022-09-03 14:17:54,367] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:17:54,379] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:19:54,374] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:19:54,377] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:19:54,377] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:19:54,377] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:19:54,377] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:19:54,382] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:19:54,389] {standard_task_runner.py:52} INFO - Started process 41689 to run task
+[2022-09-03 14:19:54,393] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '664', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpkfqivrf6', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpmf6kr1qb']
+[2022-09-03 14:19:54,394] {standard_task_runner.py:77} INFO - Job 664: Subtask field_rename
+[2022-09-03 14:19:54,416] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:19:54,436] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:19:57,648] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:20:00,651] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:20:00,653] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:20:00,653] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:20:01,887] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:20:02,115] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 888.96rows/s]
+[2022-09-03 14:20:02,116] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 883.87rows/s]
+[2022-09-03 14:20:02,116] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:20:02,129] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:20:02,139] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:20:08,995] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:20:08,996] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:20:08,997] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1506.03it/s]
+[2022-09-03 14:20:08,998] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:20:08,998] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:20:08,999] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:20:09,015] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T191954, end_date=20220903T192009
+[2022-09-03 14:20:09,060] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:20:09,071] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:23:30,119] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:23:30,123] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:23:30,123] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:23:30,123] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:23:30,123] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:23:30,127] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:23:30,134] {standard_task_runner.py:52} INFO - Started process 41787 to run task
+[2022-09-03 14:23:30,138] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '668', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp1gpkgjyz', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpvfoa10do']
+[2022-09-03 14:23:30,139] {standard_task_runner.py:77} INFO - Job 668: Subtask field_rename
+[2022-09-03 14:23:30,161] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:23:30,179] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:23:33,401] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:23:36,405] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:23:36,407] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:23:36,409] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:23:37,630] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:23:37,888] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 780.14rows/s]
+[2022-09-03 14:23:37,889] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 777.99rows/s]
+[2022-09-03 14:23:37,889] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:23:37,901] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:23:37,910] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:23:41,866] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:23:41,868] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:23:41,869] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 892.98it/s]
+[2022-09-03 14:23:41,870] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:23:41,870] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:23:41,871] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:23:41,888] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T192330, end_date=20220903T192341
+[2022-09-03 14:23:41,915] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:23:41,927] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:27:37,390] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:27:37,394] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:27:37,394] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:27:37,394] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:27:37,394] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:27:37,398] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:27:37,405] {standard_task_runner.py:52} INFO - Started process 41892 to run task
+[2022-09-03 14:27:37,409] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '673', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpcrju7ou5', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpglv82u3i']
+[2022-09-03 14:27:37,410] {standard_task_runner.py:77} INFO - Job 673: Subtask field_rename
+[2022-09-03 14:27:37,432] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:27:37,453] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:27:40,676] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:27:43,680] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:27:43,682] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:27:43,682] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:27:45,014] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:27:45,232] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 923.87rows/s]
+[2022-09-03 14:27:45,232] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 920.09rows/s]
+[2022-09-03 14:27:45,233] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:27:45,245] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:27:45,254] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:27:49,560] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:27:49,561] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:27:49,563] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1136.36it/s]
+[2022-09-03 14:27:49,564] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:27:49,564] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:27:49,565] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:27:49,584] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T192737, end_date=20220903T192749
+[2022-09-03 14:27:49,632] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:27:49,643] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:35:04,982] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:35:04,986] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:35:04,986] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:35:04,986] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:35:04,986] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:35:04,990] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:35:04,997] {standard_task_runner.py:52} INFO - Started process 42024 to run task
+[2022-09-03 14:35:05,001] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '676', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpdqbjtihm', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpfviye818']
+[2022-09-03 14:35:05,003] {standard_task_runner.py:77} INFO - Job 676: Subtask field_rename
+[2022-09-03 14:35:05,025] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:35:05,044] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:35:08,253] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:35:11,257] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:35:11,258] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:35:11,259] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:35:12,534] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:35:12,788] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 792.79rows/s]
+[2022-09-03 14:35:12,789] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 786.93rows/s]
+[2022-09-03 14:35:12,789] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:35:12,802] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:35:12,811] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:35:17,196] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:35:17,197] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:35:17,199] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 877.29it/s]
+[2022-09-03 14:35:17,200] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:35:17,201] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:35:17,201] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:35:17,219] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T193504, end_date=20220903T193517
+[2022-09-03 14:35:17,266] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:35:17,276] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:40:19,214] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:40:19,217] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:40:19,217] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:40:19,217] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:40:19,217] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:40:19,223] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:40:19,230] {standard_task_runner.py:52} INFO - Started process 42156 to run task
+[2022-09-03 14:40:19,234] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '679', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp73ic3j25', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp4f4s7_bo']
+[2022-09-03 14:40:19,236] {standard_task_runner.py:77} INFO - Job 679: Subtask field_rename
+[2022-09-03 14:40:19,256] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:40:19,276] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:40:22,500] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:40:25,504] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:40:25,506] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:40:25,506] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:40:26,631] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:40:26,923] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 686.77rows/s]
+[2022-09-03 14:40:26,925] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 681.34rows/s]
+[2022-09-03 14:40:26,925] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:40:26,934] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:40:26,944] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:40:33,613] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:40:33,614] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:40:33,615] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1367.56it/s]
+[2022-09-03 14:40:33,616] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:40:33,617] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:40:33,617] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:40:33,635] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T194019, end_date=20220903T194033
+[2022-09-03 14:40:33,665] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:40:33,677] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 14:51:24,945] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:51:24,949] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 14:51:24,949] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:51:24,949] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 14:51:24,949] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 14:51:24,953] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 14:51:24,959] {standard_task_runner.py:52} INFO - Started process 42386 to run task
+[2022-09-03 14:51:24,964] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '685', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmphmb3u1nu', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpqfxslirs']
+[2022-09-03 14:51:24,965] {standard_task_runner.py:77} INFO - Job 685: Subtask field_rename
+[2022-09-03 14:51:24,987] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 14:51:25,006] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 14:51:28,215] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-03 14:51:31,219] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-03 14:51:31,220] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 14:51:31,221] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 14:51:32,547] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-03 14:51:32,776] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 881.95rows/s]
+[2022-09-03 14:51:32,777] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 874.77rows/s]
+[2022-09-03 14:51:32,778] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:51:32,785] {logging_mixin.py:109} INFO - Staging table extraction successfully completed
+[2022-09-03 14:51:32,795] {logging_mixin.py:109} INFO -      incident_report_number  ... rep_time
+0               20222381575  ...     2129
+1               20222381479  ...     1935
+2               20222381858  ...     2337
+3               20222381688  ...     2201
+4               20222381348  ...     1830
+..                      ...  ...      ...
+195             20222390765  ...     1208
+196             20222391622  ...        7
+197             20222391707  ...       27
+198             20222391682  ...       37
+199             20222391561  ...       10
+
+[200 rows x 9 columns]
+[2022-09-03 14:51:37,711] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 14:51:37,712] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-03 14:51:37,714] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 897.56it/s]
+[2022-09-03 14:51:37,715] {logging_mixin.py:109} WARNING - 
+[2022-09-03 14:51:37,716] {logging_mixin.py:109} INFO - Staging 2 table completed successfully
+[2022-09-03 14:51:37,717] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 14:51:37,733] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T195124, end_date=20220903T195137
+[2022-09-03 14:51:37,764] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 14:51:37,776] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-09-03 15:36:42,885] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 15:36:42,888] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [queued]>
+[2022-09-03 15:36:42,889] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 15:36:42,889] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-03 15:36:42,889] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-03 15:36:42,893] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): field_rename> on 2022-09-03 00:00:00+00:00
+[2022-09-03 15:36:42,900] {standard_task_runner.py:52} INFO - Started process 43849 to run task
+[2022-09-03 15:36:42,905] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_airflow', 'field_rename', 'scheduled__2022-09-03T00:00:00+00:00', '--job-id', '691', '--raw', '--subdir', 'DAGS_FOLDER/etl_airflowv2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpb7nc5uop', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpjd6xabu8']
+[2022-09-03 15:36:42,906] {standard_task_runner.py:77} INFO - Job 691: Subtask field_rename
+[2022-09-03 15:36:42,929] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_airflow.field_rename scheduled__2022-09-03T00:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-03 15:36:42,955] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_airflow
+AIRFLOW_CTX_TASK_ID=field_rename
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-03T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-03T00:00:00+00:00
+[2022-09-03 15:36:43,217] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:36:43,217] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:36:43,217] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-03 15:36:43,217] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-03 15:36:44,356] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/10 [00:00<?, ?rows/s]
+[2022-09-03 15:36:44,560] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 10/10 [00:00<00:00, 49.49rows/s]
+[2022-09-03 15:36:44,561] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 10/10 [00:00<00:00, 49.10rows/s]
+[2022-09-03 15:36:44,562] {logging_mixin.py:109} WARNING - 
+[2022-09-03 15:36:49,011] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-03 15:36:49,012] {gbq.py:604} INFO - 10 out of 10 rows loaded.
+[2022-09-03 15:36:49,014] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 1526.87it/s]
+[2022-09-03 15:36:49,017] {logging_mixin.py:109} WARNING - 
+[2022-09-03 15:36:49,019] {logging_mixin.py:109} INFO - Field renamed and loaded into staging 2 - completed
+[2022-09-03 15:36:49,019] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-03 15:36:49,049] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_airflow, task_id=field_rename, execution_date=20220903T000000, start_date=20220903T203642, end_date=20220903T203649
+[2022-09-03 15:36:49,093] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-03 15:36:49,105] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check

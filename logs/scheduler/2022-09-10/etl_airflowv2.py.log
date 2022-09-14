@@ -1,0 +1,174 @@
+[2022-09-10 11:30:10,060] {processor.py:163} INFO - Started process (PID=59716) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:10,060] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:30:10,060] {logging_mixin.py:109} INFO - [2022-09-10 11:30:10,060] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:11,120] {logging_mixin.py:109} INFO - [2022-09-10 11:30:11,120] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:30:11,435] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:30:11,450] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:11,460] {logging_mixin.py:109} INFO - [2022-09-10 11:30:11,460] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:30:11,465] {logging_mixin.py:109} INFO - [2022-09-10 11:30:11,465] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:30:11,470] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 1.410 seconds
+[2022-09-10 11:30:42,936] {processor.py:163} INFO - Started process (PID=59736) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:42,937] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:30:42,937] {logging_mixin.py:109} INFO - [2022-09-10 11:30:42,937] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:43,697] {logging_mixin.py:109} INFO - [2022-09-10 11:30:43,697] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:30:43,867] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:30:43,882] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:30:43,893] {logging_mixin.py:109} INFO - [2022-09-10 11:30:43,893] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:30:43,898] {logging_mixin.py:109} INFO - [2022-09-10 11:30:43,898] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:30:43,902] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.966 seconds
+[2022-09-10 11:31:17,050] {processor.py:163} INFO - Started process (PID=59742) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:31:17,050] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:31:17,051] {logging_mixin.py:109} INFO - [2022-09-10 11:31:17,050] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:31:17,768] {logging_mixin.py:109} INFO - [2022-09-10 11:31:17,768] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:31:17,927] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:31:17,940] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:31:17,950] {logging_mixin.py:109} INFO - [2022-09-10 11:31:17,950] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:31:17,955] {logging_mixin.py:109} INFO - [2022-09-10 11:31:17,955] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:31:17,959] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.909 seconds
+[2022-09-10 11:32:04,857] {processor.py:163} INFO - Started process (PID=59757) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:04,857] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:32:04,857] {logging_mixin.py:109} INFO - [2022-09-10 11:32:04,857] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:05,583] {logging_mixin.py:109} INFO - [2022-09-10 11:32:05,583] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:32:05,744] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:32:05,758] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:05,768] {logging_mixin.py:109} INFO - [2022-09-10 11:32:05,768] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:32:05,772] {logging_mixin.py:109} INFO - [2022-09-10 11:32:05,772] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:32:05,776] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.920 seconds
+[2022-09-10 11:32:50,212] {processor.py:163} INFO - Started process (PID=59826) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:50,213] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:32:50,213] {logging_mixin.py:109} INFO - [2022-09-10 11:32:50,213] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:50,939] {logging_mixin.py:109} INFO - [2022-09-10 11:32:50,939] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:32:51,100] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:32:51,113] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:32:51,123] {logging_mixin.py:109} INFO - [2022-09-10 11:32:51,123] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:32:51,128] {logging_mixin.py:109} INFO - [2022-09-10 11:32:51,128] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:32:51,131] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.919 seconds
+[2022-09-10 11:33:35,012] {processor.py:163} INFO - Started process (PID=59837) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:33:35,012] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:33:35,013] {logging_mixin.py:109} INFO - [2022-09-10 11:33:35,013] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:33:35,720] {logging_mixin.py:109} INFO - [2022-09-10 11:33:35,720] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:33:35,876] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:33:35,889] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:33:35,899] {logging_mixin.py:109} INFO - [2022-09-10 11:33:35,899] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:33:35,904] {logging_mixin.py:109} INFO - [2022-09-10 11:33:35,904] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:33:35,908] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.896 seconds
+[2022-09-10 11:34:20,272] {processor.py:163} INFO - Started process (PID=59842) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:34:20,273] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:34:20,273] {logging_mixin.py:109} INFO - [2022-09-10 11:34:20,273] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:34:21,020] {logging_mixin.py:109} INFO - [2022-09-10 11:34:21,020] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:34:21,178] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:34:21,191] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:34:21,201] {logging_mixin.py:109} INFO - [2022-09-10 11:34:21,201] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:34:21,206] {logging_mixin.py:109} INFO - [2022-09-10 11:34:21,206] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:34:21,209] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.937 seconds
+[2022-09-10 11:35:04,818] {processor.py:163} INFO - Started process (PID=59846) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:04,818] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:35:04,818] {logging_mixin.py:109} INFO - [2022-09-10 11:35:04,818] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:05,537] {logging_mixin.py:109} INFO - [2022-09-10 11:35:05,536] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:35:05,700] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:35:05,714] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:05,724] {logging_mixin.py:109} INFO - [2022-09-10 11:35:05,724] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:35:05,729] {logging_mixin.py:109} INFO - [2022-09-10 11:35:05,729] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:35:05,733] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.915 seconds
+[2022-09-10 11:35:52,845] {processor.py:163} INFO - Started process (PID=59858) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:52,845] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:35:52,845] {logging_mixin.py:109} INFO - [2022-09-10 11:35:52,845] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:53,562] {logging_mixin.py:109} INFO - [2022-09-10 11:35:53,562] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:35:53,726] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:35:53,740] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:35:53,750] {logging_mixin.py:109} INFO - [2022-09-10 11:35:53,750] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:35:53,755] {logging_mixin.py:109} INFO - [2022-09-10 11:35:53,755] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:35:53,759] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.914 seconds
+[2022-09-10 11:36:39,121] {processor.py:163} INFO - Started process (PID=59871) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:36:39,121] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:36:39,122] {logging_mixin.py:109} INFO - [2022-09-10 11:36:39,122] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:36:39,829] {logging_mixin.py:109} INFO - [2022-09-10 11:36:39,829] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:36:39,984] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:36:39,997] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:36:40,007] {logging_mixin.py:109} INFO - [2022-09-10 11:36:40,007] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:36:40,011] {logging_mixin.py:109} INFO - [2022-09-10 11:36:40,011] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:36:40,015] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.895 seconds
+[2022-09-10 11:37:23,842] {processor.py:163} INFO - Started process (PID=59882) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:37:23,842] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:37:23,842] {logging_mixin.py:109} INFO - [2022-09-10 11:37:23,842] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:37:24,546] {logging_mixin.py:109} INFO - [2022-09-10 11:37:24,546] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:37:24,709] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:37:24,723] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:37:24,732] {logging_mixin.py:109} INFO - [2022-09-10 11:37:24,732] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:37:24,737] {logging_mixin.py:109} INFO - [2022-09-10 11:37:24,737] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:37:24,741] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.900 seconds
+[2022-09-10 11:38:07,295] {processor.py:163} INFO - Started process (PID=59956) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:07,295] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:38:07,295] {logging_mixin.py:109} INFO - [2022-09-10 11:38:07,295] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:08,113] {logging_mixin.py:109} INFO - [2022-09-10 11:38:08,113] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:38:08,309] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:38:08,326] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:08,338] {logging_mixin.py:109} INFO - [2022-09-10 11:38:08,338] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:38:08,343] {logging_mixin.py:109} INFO - [2022-09-10 11:38:08,343] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:38:08,348] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 1.053 seconds
+[2022-09-10 11:38:51,275] {processor.py:163} INFO - Started process (PID=59985) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:51,275] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:38:51,275] {logging_mixin.py:109} INFO - [2022-09-10 11:38:51,275] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:51,999] {logging_mixin.py:109} INFO - [2022-09-10 11:38:51,999] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:38:52,165] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:38:52,179] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:38:52,189] {logging_mixin.py:109} INFO - [2022-09-10 11:38:52,189] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:38:52,193] {logging_mixin.py:109} INFO - [2022-09-10 11:38:52,193] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:38:52,197] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.922 seconds
+[2022-09-10 11:39:36,996] {processor.py:163} INFO - Started process (PID=60033) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:39:36,996] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:39:36,997] {logging_mixin.py:109} INFO - [2022-09-10 11:39:36,997] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:39:37,794] {logging_mixin.py:109} INFO - [2022-09-10 11:39:37,794] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:39:37,952] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:39:37,966] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:39:37,976] {logging_mixin.py:109} INFO - [2022-09-10 11:39:37,976] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:39:37,981] {logging_mixin.py:109} INFO - [2022-09-10 11:39:37,981] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:39:37,985] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.989 seconds
+[2022-09-10 11:40:20,948] {processor.py:163} INFO - Started process (PID=60048) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:40:20,948] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:40:20,949] {logging_mixin.py:109} INFO - [2022-09-10 11:40:20,949] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:40:21,659] {logging_mixin.py:109} INFO - [2022-09-10 11:40:21,659] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:40:21,822] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:40:21,836] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:40:21,846] {logging_mixin.py:109} INFO - [2022-09-10 11:40:21,846] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:40:21,851] {logging_mixin.py:109} INFO - [2022-09-10 11:40:21,851] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:40:21,855] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.907 seconds
+[2022-09-10 11:41:07,082] {processor.py:163} INFO - Started process (PID=60054) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:07,082] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:41:07,083] {logging_mixin.py:109} INFO - [2022-09-10 11:41:07,083] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:07,782] {logging_mixin.py:109} INFO - [2022-09-10 11:41:07,782] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:41:07,944] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:41:07,958] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:07,968] {logging_mixin.py:109} INFO - [2022-09-10 11:41:07,968] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:41:07,973] {logging_mixin.py:109} INFO - [2022-09-10 11:41:07,972] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:41:07,977] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.895 seconds
+[2022-09-10 11:41:51,135] {processor.py:163} INFO - Started process (PID=60060) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:51,135] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:41:51,135] {logging_mixin.py:109} INFO - [2022-09-10 11:41:51,135] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:51,846] {logging_mixin.py:109} INFO - [2022-09-10 11:41:51,846] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:41:51,999] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:41:52,012] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:41:52,022] {logging_mixin.py:109} INFO - [2022-09-10 11:41:52,022] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:41:52,027] {logging_mixin.py:109} INFO - [2022-09-10 11:41:52,027] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:41:52,031] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.896 seconds
+[2022-09-10 11:42:40,962] {processor.py:163} INFO - Started process (PID=60162) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:42:40,962] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:42:40,963] {logging_mixin.py:109} INFO - [2022-09-10 11:42:40,962] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:42:41,685] {logging_mixin.py:109} INFO - [2022-09-10 11:42:41,685] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:42:41,845] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:42:41,858] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:42:41,868] {logging_mixin.py:109} INFO - [2022-09-10 11:42:41,868] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:42:41,873] {logging_mixin.py:109} INFO - [2022-09-10 11:42:41,873] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:42:41,877] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.916 seconds
+[2022-09-10 11:43:40,284] {processor.py:163} INFO - Started process (PID=60229) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:43:40,284] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:43:40,285] {logging_mixin.py:109} INFO - [2022-09-10 11:43:40,285] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:43:41,000] {logging_mixin.py:109} INFO - [2022-09-10 11:43:41,000] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:43:41,165] {logging_mixin.py:109} INFO - Dag Completed - Please check airflow website
+[2022-09-10 11:43:41,179] {processor.py:654} INFO - DAG(s) dict_keys(['etl_airflow']) retrieved from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:43:41,189] {logging_mixin.py:109} INFO - [2022-09-10 11:43:41,189] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:43:41,194] {logging_mixin.py:109} INFO - [2022-09-10 11:43:41,194] {dag.py:2935} INFO - Setting next_dagrun for etl_airflow to None
+[2022-09-10 11:43:41,199] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_airflowv2.py took 0.915 seconds
+[2022-09-10 11:44:24,442] {processor.py:163} INFO - Started process (PID=60251) to work on /Users/theonewiththelion/airflow/dags/etl_airflowv2.py
+[2022-09-10 11:44:24,442] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_airflowv2.py for tasks to queue
+[2022-09-10 11:44:24,442] {logging_mixin.py:109} INFO - [2022-09-10 11:44:24,442] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_airflowv2.py

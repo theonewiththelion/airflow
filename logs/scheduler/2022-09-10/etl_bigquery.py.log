@@ -1,0 +1,162 @@
+[2022-09-10 11:30:31,845] {processor.py:163} INFO - Started process (PID=59733) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:30:31,845] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:30:31,846] {logging_mixin.py:109} INFO - [2022-09-10 11:30:31,846] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:30:32,562] {logging_mixin.py:109} INFO - [2022-09-10 11:30:32,562] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:30:32,735] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:30:32,749] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:30:32,759] {logging_mixin.py:109} INFO - [2022-09-10 11:30:32,759] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:30:32,763] {logging_mixin.py:109} INFO - [2022-09-10 11:30:32,763] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:30:32,768] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.923 seconds
+[2022-09-10 11:31:20,022] {processor.py:163} INFO - Started process (PID=59743) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:31:20,037] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:31:20,038] {logging_mixin.py:109} INFO - [2022-09-10 11:31:20,038] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:31:20,785] {logging_mixin.py:109} INFO - [2022-09-10 11:31:20,785] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:31:20,963] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:31:20,977] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:31:20,987] {logging_mixin.py:109} INFO - [2022-09-10 11:31:20,987] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:31:20,992] {logging_mixin.py:109} INFO - [2022-09-10 11:31:20,992] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:31:20,997] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.975 seconds
+[2022-09-10 11:32:07,816] {processor.py:163} INFO - Started process (PID=59760) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:07,816] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:32:07,816] {logging_mixin.py:109} INFO - [2022-09-10 11:32:07,816] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:08,531] {logging_mixin.py:109} INFO - [2022-09-10 11:32:08,531] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:32:08,686] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:32:08,699] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:08,709] {logging_mixin.py:109} INFO - [2022-09-10 11:32:08,709] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:32:08,713] {logging_mixin.py:109} INFO - [2022-09-10 11:32:08,713] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:32:08,717] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.901 seconds
+[2022-09-10 11:32:53,217] {processor.py:163} INFO - Started process (PID=59828) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:53,218] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:32:53,218] {logging_mixin.py:109} INFO - [2022-09-10 11:32:53,218] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:53,945] {logging_mixin.py:109} INFO - [2022-09-10 11:32:53,945] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:32:54,105] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:32:54,119] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:32:54,128] {logging_mixin.py:109} INFO - [2022-09-10 11:32:54,128] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:32:54,133] {logging_mixin.py:109} INFO - [2022-09-10 11:32:54,133] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:32:54,137] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.920 seconds
+[2022-09-10 11:33:37,940] {processor.py:163} INFO - Started process (PID=59838) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:33:37,940] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:33:37,940] {logging_mixin.py:109} INFO - [2022-09-10 11:33:37,940] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:33:38,651] {logging_mixin.py:109} INFO - [2022-09-10 11:33:38,650] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:33:38,809] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:33:38,822] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:33:38,832] {logging_mixin.py:109} INFO - [2022-09-10 11:33:38,832] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:33:38,836] {logging_mixin.py:109} INFO - [2022-09-10 11:33:38,836] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:33:38,840] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.900 seconds
+[2022-09-10 11:34:23,235] {processor.py:163} INFO - Started process (PID=59843) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:34:23,236] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:34:23,236] {logging_mixin.py:109} INFO - [2022-09-10 11:34:23,236] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:34:23,943] {logging_mixin.py:109} INFO - [2022-09-10 11:34:23,943] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:34:24,101] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:34:24,115] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:34:24,125] {logging_mixin.py:109} INFO - [2022-09-10 11:34:24,125] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:34:24,129] {logging_mixin.py:109} INFO - [2022-09-10 11:34:24,129] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:34:24,134] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.899 seconds
+[2022-09-10 11:35:07,742] {processor.py:163} INFO - Started process (PID=59848) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:07,743] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:35:07,743] {logging_mixin.py:109} INFO - [2022-09-10 11:35:07,743] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:08,453] {logging_mixin.py:109} INFO - [2022-09-10 11:35:08,453] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:35:08,613] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:35:08,626] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:08,636] {logging_mixin.py:109} INFO - [2022-09-10 11:35:08,636] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:35:08,640] {logging_mixin.py:109} INFO - [2022-09-10 11:35:08,640] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:35:08,644] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.902 seconds
+[2022-09-10 11:35:55,782] {processor.py:163} INFO - Started process (PID=59859) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:55,782] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:35:55,783] {logging_mixin.py:109} INFO - [2022-09-10 11:35:55,782] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:56,487] {logging_mixin.py:109} INFO - [2022-09-10 11:35:56,487] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:35:56,643] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:35:56,656] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:35:56,666] {logging_mixin.py:109} INFO - [2022-09-10 11:35:56,666] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:35:56,671] {logging_mixin.py:109} INFO - [2022-09-10 11:35:56,671] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:35:56,675] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.893 seconds
+[2022-09-10 11:36:42,028] {processor.py:163} INFO - Started process (PID=59874) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:36:42,029] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:36:42,029] {logging_mixin.py:109} INFO - [2022-09-10 11:36:42,029] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:36:42,730] {logging_mixin.py:109} INFO - [2022-09-10 11:36:42,729] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:36:42,887] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:36:42,901] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:36:42,911] {logging_mixin.py:109} INFO - [2022-09-10 11:36:42,910] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:36:42,915] {logging_mixin.py:109} INFO - [2022-09-10 11:36:42,915] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:36:42,919] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.891 seconds
+[2022-09-10 11:37:26,751] {processor.py:163} INFO - Started process (PID=59883) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:37:26,751] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:37:26,751] {logging_mixin.py:109} INFO - [2022-09-10 11:37:26,751] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:37:27,480] {logging_mixin.py:109} INFO - [2022-09-10 11:37:27,480] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:37:27,639] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:37:27,653] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:37:27,663] {logging_mixin.py:109} INFO - [2022-09-10 11:37:27,662] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:37:27,667] {logging_mixin.py:109} INFO - [2022-09-10 11:37:27,667] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:37:27,671] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.920 seconds
+[2022-09-10 11:38:10,420] {processor.py:163} INFO - Started process (PID=59958) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:10,420] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:38:10,420] {logging_mixin.py:109} INFO - [2022-09-10 11:38:10,420] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:11,138] {logging_mixin.py:109} INFO - [2022-09-10 11:38:11,138] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:38:11,299] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:38:11,313] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:11,323] {logging_mixin.py:109} INFO - [2022-09-10 11:38:11,323] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:38:11,339] {logging_mixin.py:109} INFO - [2022-09-10 11:38:11,338] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:38:11,360] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.940 seconds
+[2022-09-10 11:38:54,270] {processor.py:163} INFO - Started process (PID=59986) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:54,270] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:38:54,271] {logging_mixin.py:109} INFO - [2022-09-10 11:38:54,271] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:55,002] {logging_mixin.py:109} INFO - [2022-09-10 11:38:55,002] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:38:55,170] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:38:55,184] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:38:55,194] {logging_mixin.py:109} INFO - [2022-09-10 11:38:55,194] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:38:55,199] {logging_mixin.py:109} INFO - [2022-09-10 11:38:55,199] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:38:55,203] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.933 seconds
+[2022-09-10 11:39:39,985] {processor.py:163} INFO - Started process (PID=60042) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:39:39,985] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:39:39,985] {logging_mixin.py:109} INFO - [2022-09-10 11:39:39,985] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:39:40,727] {logging_mixin.py:109} INFO - [2022-09-10 11:39:40,727] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:39:40,890] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:39:40,904] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:39:40,914] {logging_mixin.py:109} INFO - [2022-09-10 11:39:40,914] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:39:40,919] {logging_mixin.py:109} INFO - [2022-09-10 11:39:40,919] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:39:40,923] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.938 seconds
+[2022-09-10 11:40:23,885] {processor.py:163} INFO - Started process (PID=60049) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:40:23,885] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:40:23,886] {logging_mixin.py:109} INFO - [2022-09-10 11:40:23,886] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:40:24,620] {logging_mixin.py:109} INFO - [2022-09-10 11:40:24,620] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:40:24,782] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:40:24,795] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:40:24,805] {logging_mixin.py:109} INFO - [2022-09-10 11:40:24,804] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:40:24,809] {logging_mixin.py:109} INFO - [2022-09-10 11:40:24,809] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:40:24,814] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.929 seconds
+[2022-09-10 11:41:09,998] {processor.py:163} INFO - Started process (PID=60056) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:09,998] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:41:09,998] {logging_mixin.py:109} INFO - [2022-09-10 11:41:09,998] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:10,705] {logging_mixin.py:109} INFO - [2022-09-10 11:41:10,705] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:41:10,861] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:41:10,875] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:10,884] {logging_mixin.py:109} INFO - [2022-09-10 11:41:10,884] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:41:10,890] {logging_mixin.py:109} INFO - [2022-09-10 11:41:10,890] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:41:10,894] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.897 seconds
+[2022-09-10 11:41:54,039] {processor.py:163} INFO - Started process (PID=60063) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:54,039] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:41:54,039] {logging_mixin.py:109} INFO - [2022-09-10 11:41:54,039] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:54,744] {logging_mixin.py:109} INFO - [2022-09-10 11:41:54,744] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:41:54,907] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:41:54,920] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:41:54,930] {logging_mixin.py:109} INFO - [2022-09-10 11:41:54,930] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:41:54,935] {logging_mixin.py:109} INFO - [2022-09-10 11:41:54,935] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:41:54,938] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.900 seconds
+[2022-09-10 11:42:43,930] {processor.py:163} INFO - Started process (PID=60175) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:42:43,931] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:42:43,931] {logging_mixin.py:109} INFO - [2022-09-10 11:42:43,931] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:42:44,674] {logging_mixin.py:109} INFO - [2022-09-10 11:42:44,673] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:42:44,833] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:42:44,847] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:42:44,858] {logging_mixin.py:109} INFO - [2022-09-10 11:42:44,857] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:42:44,863] {logging_mixin.py:109} INFO - [2022-09-10 11:42:44,862] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:42:44,866] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.936 seconds
+[2022-09-10 11:43:43,208] {processor.py:163} INFO - Started process (PID=60232) to work on /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:43:43,208] {processor.py:642} INFO - Processing file /Users/theonewiththelion/airflow/dags/etl_bigquery.py for tasks to queue
+[2022-09-10 11:43:43,208] {logging_mixin.py:109} INFO - [2022-09-10 11:43:43,208] {dagbag.py:500} INFO - Filling up the DagBag from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:43:43,922] {logging_mixin.py:109} INFO - [2022-09-10 11:43:43,922] {utils.py:159} INFO - NumExpr defaulting to 8 threads.
+[2022-09-10 11:43:44,081] {logging_mixin.py:109} INFO - Dag setup
+[2022-09-10 11:43:44,095] {processor.py:654} INFO - DAG(s) dict_keys(['etl_crime_austin']) retrieved from /Users/theonewiththelion/airflow/dags/etl_bigquery.py
+[2022-09-10 11:43:44,105] {logging_mixin.py:109} INFO - [2022-09-10 11:43:44,105] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-09-10 11:43:44,110] {logging_mixin.py:109} INFO - [2022-09-10 11:43:44,110] {dag.py:2935} INFO - Setting next_dagrun for etl_crime_austin to 2022-09-04T00:00:00+00:00
+[2022-09-10 11:43:44,114] {processor.py:171} INFO - Processing /Users/theonewiththelion/airflow/dags/etl_bigquery.py took 0.906 seconds

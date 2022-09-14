@@ -1,0 +1,2 @@
+/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/configuration.py:276: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if StrictVersion(sqlite3.sqlite_version) < StrictVersion(min_sqlite_version):

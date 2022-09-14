@@ -1,0 +1,36 @@
+[2022-09-02 12:21:37,625] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Load scheduled__2022-08-28T01:40:00+00:00 [queued]>
+[2022-09-02 12:21:37,628] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: etl_crime.Load scheduled__2022-08-28T01:40:00+00:00 [queued]>
+[2022-09-02 12:21:37,628] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:21:37,628] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-09-02 12:21:37,628] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-09-02 12:21:37,632] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Load> on 2022-08-28 01:40:00+00:00
+[2022-09-02 12:21:37,640] {standard_task_runner.py:52} INFO - Started process 36560 to run task
+[2022-09-02 12:21:37,644] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_crime', 'Load', 'scheduled__2022-08-28T01:40:00+00:00', '--job-id', '552', '--raw', '--subdir', 'DAGS_FOLDER/etl_bigquery.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmprdlb9k2y', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmptgysu7kq']
+[2022-09-02 12:21:37,646] {standard_task_runner.py:77} INFO - Job 552: Subtask Load
+[2022-09-02 12:21:37,668] {logging_mixin.py:109} INFO - Running <TaskInstance: etl_crime.Load scheduled__2022-08-28T01:40:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-09-02 12:21:37,690] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=etl_crime
+AIRFLOW_CTX_TASK_ID=Load
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T01:40:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T01:40:00+00:00
+[2022-09-02 12:21:40,909] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2022-09-02 12:21:43,913] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2022-09-02 12:21:43,915] {_metadata.py:99} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 64] Host is down
+[2022-09-02 12:21:43,916] {_default.py:290} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2022-09-02 12:21:45,271] {logging_mixin.py:109} WARNING - Downloading:   0%|          | 0/200 [00:00<?, ?rows/s]
+[2022-09-02 12:21:45,498] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 887.22rows/s]
+[2022-09-02 12:21:45,498] {logging_mixin.py:109} WARNING - Downloading: 100%|##########| 200/200 [00:00<00:00, 884.20rows/s]
+[2022-09-02 12:21:45,498] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:21:49,594] {logging_mixin.py:109} WARNING -   0%|          | 0/1 [00:00<?, ?it/s]
+[2022-09-02 12:21:49,596] {gbq.py:604} INFO - 200 out of 200 rows loaded.
+[2022-09-02 12:21:49,598] {logging_mixin.py:109} WARNING - 100%|##########| 1/1 [00:00<00:00, 859.14it/s]
+[2022-09-02 12:21:49,599] {logging_mixin.py:109} WARNING - 
+[2022-09-02 12:21:49,600] {logging_mixin.py:109} INFO - Done, please check the table
+[2022-09-02 12:21:49,601] {python.py:175} INFO - Done. Returned value was: None
+[2022-09-02 12:21:49,616] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=etl_crime, task_id=Load, execution_date=20220828T014000, start_date=20220902T172137, end_date=20220902T172149
+[2022-09-02 12:21:49,670] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-09-02 12:21:49,679] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,275 @@
+[2022-08-28 14:30:12,466] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 14:30:12,469] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 14:30:12,469] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:30:12,469] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-28 14:30:12,469] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:30:12,473] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 01:30:00+00:00
+[2022-08-28 14:30:12,480] {standard_task_runner.py:52} INFO - Started process 28026 to run task
+[2022-08-28 14:30:12,484] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T01:30:00+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp5k70pm1j', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpc3jvsi_3']
+[2022-08-28 14:30:12,485] {standard_task_runner.py:77} INFO - Job 119: Subtask Extraction
+[2022-08-28 14:30:12,509] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-08-28 14:30:12,530] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T01:30:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T01:30:00+00:00
+[2022-08-28 14:30:13,655] {logging_mixin.py:109} INFO -      incident_report_number                 crime_type  ...                 rep_date rep_time
+0               20222321633         FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1               20222321603        PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2               20222321596         FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3               20222321579                 AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4               20222321567                 AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                      ...                        ...  ...                      ...      ...
+195             20222311299         ASSAULT BY CONTACT  ...  2022-08-19T00:00:00.000     1942
+196             20222311272         FAMILY DISTURBANCE  ...  2022-08-19T00:00:00.000     1916
+197             20222311148        ASSAULT WITH INJURY  ...  2022-08-19T00:00:00.000     1914
+198             20222311261  VIOL TEMP EX PARTE  ORDER  ...  2022-08-19T00:00:00.000     1910
+199             20222311178         DATING DISTURBANCE  ...  2022-08-19T00:00:00.000     1903
+
+[200 rows x 9 columns]
+[2022-08-28 14:30:13,656] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-28 14:30:13,659] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T013000, start_date=20220828T193012, end_date=20220828T193013
+[2022-08-28 14:30:13,710] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-28 14:30:13,722] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-08-28 14:40:01,109] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 14:40:01,113] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 14:40:01,113] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:40:01,113] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-28 14:40:01,113] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:40:01,117] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 01:30:00+00:00
+[2022-08-28 14:40:01,129] {standard_task_runner.py:52} INFO - Started process 28471 to run task
+[2022-08-28 14:40:01,132] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T01:30:00+00:00', '--job-id', '191', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpzdqd_cnl', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpt6r6x4dx']
+[2022-08-28 14:40:01,134] {standard_task_runner.py:77} INFO - Job 191: Subtask Extraction
+[2022-08-28 14:40:01,157] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [running]> on host Jonathans-MacBook-Pro.local
+[2022-08-28 14:40:01,175] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T01:30:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T01:30:00+00:00
+[2022-08-28 14:40:02,015] {logging_mixin.py:109} INFO -     incident_report_number                    crime_type  ...                 rep_date rep_time
+0              20222321633            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1              20222321603           PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2              20222321596            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3              20222321579                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4              20222321567                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                     ...                           ...  ...                      ...      ...
+95             20228015091                    AUTO THEFT  ...  2022-08-20T00:00:00.000      852
+96           2022222320350             CRIMINAL TRESPASS  ...  2022-08-20T00:00:00.000      741
+97             20222320452                    AUTO THEFT  ...  2022-08-20T00:00:00.000      731
+98             20222320356           BURGLARY OF VEHICLE  ...  2022-08-20T00:00:00.000      705
+99             20222320216  POSS CONTROLLED SUB/NARCOTIC  ...  2022-08-20T00:00:00.000      700
+
+[100 rows x 9 columns]
+[2022-08-28 14:40:02,016] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-28 14:40:02,019] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T013000, start_date=20220828T194001, end_date=20220828T194002
+[2022-08-28 14:40:02,062] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-28 14:40:02,074] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-08-28 15:11:48,378] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 15:11:48,381] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [queued]>
+[2022-08-28 15:11:48,381] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:11:48,381] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-28 15:11:48,381] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:11:48,385] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 01:30:00+00:00
+[2022-08-28 15:11:48,393] {standard_task_runner.py:52} INFO - Started process 29896 to run task
+[2022-08-28 15:11:48,397] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T01:30:00+00:00', '--job-id', '270', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmphq8kex8t', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmp6gka4vdj']
+[2022-08-28 15:11:48,398] {standard_task_runner.py:77} INFO - Job 270: Subtask Extraction
+[2022-08-28 15:11:48,422] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T01:30:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-08-28 15:11:48,441] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T01:30:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T01:30:00+00:00
+[2022-08-28 15:11:49,694] {python.py:175} INFO - Done. Returned value was:     incident_report_number                    crime_type  ...                 rep_date rep_time
+0              20222321633            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1              20222321603           PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2              20222321596            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3              20222321579                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4              20222321567                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                     ...                           ...  ...                      ...      ...
+95             20228015091                    AUTO THEFT  ...  2022-08-20T00:00:00.000      852
+96           2022222320350             CRIMINAL TRESPASS  ...  2022-08-20T00:00:00.000      741
+97             20222320452                    AUTO THEFT  ...  2022-08-20T00:00:00.000      731
+98             20222320356           BURGLARY OF VEHICLE  ...  2022-08-20T00:00:00.000      705
+99             20222320216  POSS CONTROLLED SUB/NARCOTIC  ...  2022-08-20T00:00:00.000      700
+
+[100 rows x 9 columns]
+[2022-08-28 15:11:49,702] {xcom.py:333} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your airflow config.
+[2022-08-28 15:11:49,703] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2135, in xcom_push
+    XCom.set(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 100, in set
+    value = XCom.serialize_value(value)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 331, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/opt/anaconda3/lib/python3.9/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+[2022-08-28 15:11:49,708] {taskinstance.py:1267} INFO - Marking task as FAILED. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T013000, start_date=20220828T201148, end_date=20220828T201149
+[2022-08-28 15:11:49,715] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2022-08-28 15:11:49,716] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+[2022-08-28 15:11:49,717] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+[2022-08-28 15:11:49,717] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+[2022-08-28 15:11:49,718] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,718] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,719] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,719] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+[2022-08-28 15:11:49,720] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,720] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,721] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,722] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/context.py:152 AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+[2022-08-28 15:11:49,728] {logging_mixin.py:109} WARNING - /opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py:102 PendingDeprecationWarning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2022-08-28 15:11:49,728] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-08-28 15:11:49,729] {email.py:208} INFO - Email alerting: attempt 1
+[2022-08-28 15:11:49,732] {configuration.py:381} WARNING - section/key [smtp/smtp_user] not found in config
+[2022-08-28 15:11:49,732] {email.py:208} INFO - Email alerting: attempt 1
+[2022-08-28 15:11:49,732] {taskinstance.py:1751} ERROR - Failed to send email to: jonathan.dejesus.azor@gmail.com
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2135, in xcom_push
+    XCom.set(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 100, in set
+    value = XCom.serialize_value(value)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 331, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/opt/anaconda3/lib/python3.9/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2093, in email_alert
+    send_email(self.task.email, subject, html_content)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1749, in handle_failure
+    self.email_alert(error)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2095, in email_alert
+    send_email(self.task.email, subject, html_content_err)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 55, in send_email
+    return backend(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 102, in send_email_smtp
+    send_mime_email(e_from=smtp_mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 210, in send_mime_email
+    conn = _get_smtp_connection(smtp_host, smtp_port, smtp_timeout, smtp_ssl)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/email.py", line 244, in _get_smtp_connection
+    else smtplib.SMTP(host=host, port=port, timeout=timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+  File "/opt/anaconda3/lib/python3.9/smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 844, in create_connection
+    raise err
+  File "/opt/anaconda3/lib/python3.9/socket.py", line 832, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 61] Connection refused
+[2022-08-28 15:11:49,738] {standard_task_runner.py:89} ERROR - Failed to execute job 270 for task Extraction
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 180, in _run_raw_task
+    ti._run_raw_task(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1514, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 2135, in xcom_push
+    XCom.set(
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 100, in set
+    value = XCom.serialize_value(value)
+  File "/opt/anaconda3/lib/python3.9/site-packages/airflow/models/xcom.py", line 331, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/opt/anaconda3/lib/python3.9/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/opt/anaconda3/lib/python3.9/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+[2022-08-28 15:11:49,784] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-08-28 15:11:49,823] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

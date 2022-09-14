@@ -1,0 +1,109 @@
+[2022-08-28 14:30:44,550] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 14:30:44,553] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 14:30:44,553] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:30:44,553] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-08-28 14:30:44,554] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 14:30:44,558] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 04:00:00+00:00
+[2022-08-28 14:30:44,565] {standard_task_runner.py:52} INFO - Started process 28054 to run task
+[2022-08-28 14:30:44,570] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T04:00:00+00:00', '--job-id', '128', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmprycbtxy9', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmptapyf4xc']
+[2022-08-28 14:30:44,571] {standard_task_runner.py:77} INFO - Job 128: Subtask Extraction
+[2022-08-28 14:30:44,595] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-08-28 14:30:44,617] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T04:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T04:00:00+00:00
+[2022-08-28 14:30:45,635] {logging_mixin.py:109} INFO -      incident_report_number                 crime_type  ...                 rep_date rep_time
+0               20222321633         FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1               20222321603        PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2               20222321596         FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3               20222321579                 AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4               20222321567                 AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                      ...                        ...  ...                      ...      ...
+195             20222311299         ASSAULT BY CONTACT  ...  2022-08-19T00:00:00.000     1942
+196             20222311272         FAMILY DISTURBANCE  ...  2022-08-19T00:00:00.000     1916
+197             20222311148        ASSAULT WITH INJURY  ...  2022-08-19T00:00:00.000     1914
+198             20222311261  VIOL TEMP EX PARTE  ORDER  ...  2022-08-19T00:00:00.000     1910
+199             20222311178         DATING DISTURBANCE  ...  2022-08-19T00:00:00.000     1903
+
+[200 rows x 9 columns]
+[2022-08-28 14:30:45,635] {python.py:175} INFO - Done. Returned value was: None
+[2022-08-28 14:30:45,639] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T040000, start_date=20220828T193044, end_date=20220828T193045
+[2022-08-28 14:30:45,669] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-28 14:30:45,682] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-08-28 15:25:58,381] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 15:25:58,384] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 15:25:58,384] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:25:58,384] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-08-28 15:25:58,384] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:25:58,388] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 04:00:00+00:00
+[2022-08-28 15:25:58,395] {standard_task_runner.py:52} INFO - Started process 30400 to run task
+[2022-08-28 15:25:58,400] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T04:00:00+00:00', '--job-id', '372', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpwihjgvtr', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpj7j5fby4']
+[2022-08-28 15:25:58,401] {standard_task_runner.py:77} INFO - Job 372: Subtask Extraction
+[2022-08-28 15:25:58,425] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-08-28 15:25:58,445] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T04:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T04:00:00+00:00
+[2022-08-28 15:25:59,217] {python.py:175} INFO - Done. Returned value was:     incident_report_number                    crime_type  ...                 rep_date rep_time
+0              20222321633            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1              20222321603           PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2              20222321596            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3              20222321579                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4              20222321567                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                     ...                           ...  ...                      ...      ...
+95             20228015091                    AUTO THEFT  ...  2022-08-20T00:00:00.000      852
+96           2022222320350             CRIMINAL TRESPASS  ...  2022-08-20T00:00:00.000      741
+97             20222320452                    AUTO THEFT  ...  2022-08-20T00:00:00.000      731
+98             20222320356           BURGLARY OF VEHICLE  ...  2022-08-20T00:00:00.000      705
+99             20222320216  POSS CONTROLLED SUB/NARCOTIC  ...  2022-08-20T00:00:00.000      700
+
+[100 rows x 9 columns]
+[2022-08-28 15:25:59,233] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T040000, start_date=20220828T202558, end_date=20220828T202559
+[2022-08-28 15:25:59,282] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-28 15:25:59,296] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-08-28 15:53:02,078] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 15:53:02,083] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [queued]>
+[2022-08-28 15:53:02,084] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:53:02,084] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-08-28 15:53:02,084] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-28 15:53:02,091] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): Extraction> on 2022-08-28 04:00:00+00:00
+[2022-08-28 15:53:02,097] {standard_task_runner.py:52} INFO - Started process 31382 to run task
+[2022-08-28 15:53:02,105] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'ETL_Examples', 'Extraction', 'scheduled__2022-08-28T04:00:00+00:00', '--job-id', '474', '--raw', '--subdir', 'DAGS_FOLDER/Pushtobigquery2.py', '--cfg-path', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmph3ekixlv', '--error-file', '/var/folders/35/pzst1sv14yld_nkt23lk_vmr0000gn/T/tmpd8ixucmi']
+[2022-08-28 15:53:02,105] {standard_task_runner.py:77} INFO - Job 474: Subtask Extraction
+[2022-08-28 15:53:02,134] {logging_mixin.py:109} INFO - Running <TaskInstance: ETL_Examples.Extraction scheduled__2022-08-28T04:00:00+00:00 [running]> on host 1.0.0.127.in-addr.arpa
+[2022-08-28 15:53:02,158] {taskinstance.py:1424} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=jonathan.dejesus.azor@gmail.com
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=ETL_Examples
+AIRFLOW_CTX_TASK_ID=Extraction
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-28T04:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-08-28T04:00:00+00:00
+[2022-08-28 15:53:03,038] {python.py:175} INFO - Done. Returned value was:     incident_report_number                    crime_type  ...                 rep_date rep_time
+0              20222321633            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       31
+1              20222321603           PUBLIC INTOXICATION  ...  2022-08-20T00:00:00.000     2346
+2              20222321596            FAMILY DISTURBANCE  ...  2022-08-21T00:00:00.000       30
+3              20222321579                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2329
+4              20222321567                    AUTO THEFT  ...  2022-08-20T00:00:00.000     2325
+..                     ...                           ...  ...                      ...      ...
+95             20228015091                    AUTO THEFT  ...  2022-08-20T00:00:00.000      852
+96           2022222320350             CRIMINAL TRESPASS  ...  2022-08-20T00:00:00.000      741
+97             20222320452                    AUTO THEFT  ...  2022-08-20T00:00:00.000      731
+98             20222320356           BURGLARY OF VEHICLE  ...  2022-08-20T00:00:00.000      705
+99             20222320216  POSS CONTROLLED SUB/NARCOTIC  ...  2022-08-20T00:00:00.000      700
+
+[100 rows x 9 columns]
+[2022-08-28 15:53:03,052] {taskinstance.py:1267} INFO - Marking task as SUCCESS. dag_id=ETL_Examples, task_id=Extraction, execution_date=20220828T040000, start_date=20220828T205302, end_date=20220828T205303
+[2022-08-28 15:53:03,104] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-08-28 15:53:03,113] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,219 @@
+from re import A
+from ssl import ALERT_DESCRIPTION_RECORD_OVERFLOW
+import pandas as pd
+import pandas_gbq
+import requests
+import json
+from datetime import *
+
+#The DAG object; we'll need this to instantiate a DAG
+from airflow import DAG
+from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import PythonOperator
+from airflow.utils.dates import days_ago
+#Task groups
+#Documentation https://www.astronomer.io/guides/task-groups/
+from airflow.utils.task_group import TaskGroup
+
+
+
+#Create ETL
+#Extraction - get data from API endpoint and store in a table
+#Transformation - get data from table and perform transformation
+#Load - Get from old table to new table
+
+#Add Dag - arguments
+#Airflow arguments
+default_args = {
+    'owner': 'admin',
+    'email': 'jonathan.dejesus.azor@gmail.com',
+    'start_date': datetime(2022,9,4),    
+    
+    # 'depends_on_past': False,
+    # 'start_date': days_ago(2),
+    # 'email_on_failure': False,
+    # 'email_on_retry': False,
+    # 'retries': 1,
+    # 'retry_delay': timedelta(minutes=5),
+    # 'queue': 'bash_queue',
+    # 'pool': 'backfill',
+    # 'priority_weight': 10,
+    # 'end_date': datetime(2016, 1, 1),
+    # 'wait_for_downstream': False,
+    # 'dag': dag,
+    # 'sla': timedelta(hours=2),
+    # 'execution_timeout': timedelta(seconds=300),
+    # 'on_failure_callback': some_function,
+    # 'on_success_callback': some_other_function,
+    # 'on_retry_callback': another_function,
+    # 'sla_miss_callback': yet_another_function,
+    # 'trigger_rule': 'all_success'
+}
+
+def api_extraction():
+
+    #Table contain around 2,428,732 records, please keep it limited due to resources (Data Studio)
+    austin_crime_reports_api = requests.get("https://data.austintexas.gov/resource/fdj4-gpfu.json?$limit=200")
+#------------------------------------------------
+    #Save API into a variable
+    austin_crime = austin_crime_reports_api.text
+
+    #Convert variable austin_crime into JSON format
+    json.loads(austin_crime)
+
+    #Save Json file into a dataframe
+    df_austin_crime = pd.read_json(austin_crime)
+
+    #Add specific fields into a another DataFrame = filter_df
+    stg_austin_crime = df_austin_crime[["incident_report_number", 'crime_type','location_type', 
+                                "address","zip_code","occ_date","occ_time","rep_date","rep_time"]]
+    print(stg_austin_crime)
+
+  #Load data into straging area
+    #https://pandas-gbq.readthedocs.io/en/latest/writing.html
+    project_id = 'crafty-shield-359406'
+    table_id = 'staging_table.staging_table'
+    pandas_gbq.to_gbq(stg_austin_crime, table_id, project_id='crafty-shield-359406', if_exists='replace')
+    print("Staging table completed successfully")
+
+def transformation():
+    #get data from the staging table stg_austin_crime
+    #Documentation on how to extract data from big query table
+    #https://pandas-gbq.readthedocs.io/en/latest/reading.html
+    sql = """
+    SELECT *
+    FROM `crafty-shield-359406.staging_table.staging_table`
+    """
+    #Store data from the staging table stg_austin_crime
+    df_transformed_austin_crime = pandas_gbq.read_gbq(sql, project_id='crafty-shield-359406')
+    print("Staging table extraction successfully completed")
+    print(df_transformed_austin_crime)
+
+    ####################Can I do an inside function?
+    #Rename Columns
+    #Documenation on renaming dataframe: https://stackabuse.com/how-to-rename-pandas-dataframe-column-in-python/
+    
+    df_transformed_austin_crime.rename(columns = {'occ_date' : 'occurred_date', 
+                                'occ_time' : 'ocurred_time', 
+                                'rep_date' : 'reported_date', 
+                                'rep_time' : 'reported_time'}, inplace= True)
+
+    ################FUNCTION TO CHANGE THE DATE
+    #################Change the Format of Ocurred Time
+    #Documentation https://stackoverflow.com/questions/65197597/how-to-convert-military-time-format-e-g-1305-to-hhmm-e-g-1305-in-python
+    time = pd.to_datetime(df_transformed_austin_crime['ocurred_time'].astype(str).str.zfill(4), format='%H%M').dt.time
+    #Add the variable time into the dataframe
+    #Documenation = https://github.com/wesm/feather/issues/349
+    df_transformed_austin_crime['new_occurred_time'] = time
+    #Change the type of the field "new ocurred time"
+    df_transformed_austin_crime['new_occurred_time'] = df_transformed_austin_crime['new_occurred_time'].astype(str)
+    #Change the time of the field "new ocurred time" from Military time to Standard time
+    df_transformed_austin_crime['std_time_new_occurred_time'] = [datetime.strptime(t, "%H:%M:%S").strftime("%I:%M %p") for t in df_transformed_austin_crime['new_occurred_time']]
+
+    ##################Change the format of the field "Reported time"
+    #Documentation 
+    #https://stackoverflow.com/questions/65197597/how-to-convert-military-time-format-e-g-1305-to-hhmm-e-g-1305-in-python
+    r_time = pd.to_datetime(df_transformed_austin_crime['reported_time'].astype(str).str.zfill(4), format='%H%M').dt.time
+    #Add the variable time into the dataframe
+    #Documenation
+    #https://github.com/wesm/feather/issues/349
+    df_transformed_austin_crime['new_reported_time'] = r_time
+    #Change the type of the field "new ocurred time"
+    df_transformed_austin_crime['new_reported_time'] = df_transformed_austin_crime['new_reported_time'].astype(str)
+    #Change the time of the field "new reported time" from Military time to Standard time
+    df_transformed_austin_crime['std_time_new_reported_time'] = [datetime.strptime(t, "%H:%M:%S").strftime("%I:%M %p") for t in df_transformed_austin_crime['new_reported_time']]
+    print(df_transformed_austin_crime.columns)
+    #Drop columns
+    #created new columns, no need for this two
+    df_transformed_austin_crime = df_transformed_austin_crime.drop(columns=['new_occurred_time', 'new_reported_time'])
+    print(df_transformed_austin_crime.columns)
+
+  
+    #Load data into straging area
+    #https://pandas-gbq.readthedocs.io/en/latest/writing.html
+    project_id = 'crafty-shield-359406'
+    table_id = 'staging_table.staging_table2'
+    pandas_gbq.to_gbq(df_transformed_austin_crime, table_id, project_id='crafty-shield-359406', if_exists='replace')
+    print("Staging 2 table completed successfully")
+  
+def load_data():
+    #get data from the staging table 
+    #Documentation on how to extract data from big query table
+    #https://pandas-gbq.readthedocs.io/en/latest/reading.html
+    sql = """
+    SELECT *
+    FROM `crafty-shield-359406.staging_table.staging_table2`
+    """
+    #Store data from the staging table stg_austin_crime
+    df_austin_crime = pandas_gbq.read_gbq(sql, project_id='crafty-shield-359406')
+
+    #Load into main -query table
+    #https://pandas-gbq.readthedocs.io/en/latest/writing.html
+    project_id = 'crafty-shield-359406'
+    table_id = 'austin_table.z_crime'
+    pandas_gbq.to_gbq(df_austin_crime, table_id, project_id='crafty-shield-359406', if_exists='replace')
+    print("Done, please check the table")
+
+#change this for a with ....
+dag = DAG(
+    'etl_crime_austin',
+    default_args=default_args,
+    description='Running workflow for Crime in Austin project',
+    #Run every 2 mins 
+    schedule_interval=timedelta(minutes=20)
+)
+
+# define Task
+start = DummyOperator(
+    task_id='start',
+    dag=dag)
+
+t1 = PythonOperator(
+    task_id='Extraction',
+    python_callable= api_extraction,
+    op_kwargs = {"x" : "Apache Airflow"},
+    dag=dag,
+                # Start Task Group definition
+    #with TaskGroup(group_id='group1') as tg1:
+    #t1.1 = DummyOperator(task_id='task1')
+    #t1.2 = DummyOperator(task_id='task2')
+)
+
+t2 = PythonOperator(
+    task_id='Transform',
+    #provide_context=True
+    python_callable= transformation,
+    op_kwargs = {"x" : "Apache Airflow"},
+    dag=dag,
+)
+
+# t4 = PythonOperator(
+#     task_id='field rename',
+#     #provide_context=True
+#     python_callable= field_rename,
+#     op_kwargs = {"x" : "Apache Airflow"},
+#     dag=dag,
+# )
+
+t3 = PythonOperator(
+    task_id='Load',
+    #provide_context=True
+    python_callable= load_data,
+    op_kwargs = {"x" : "Apache Airflow"},
+    dag=dag,
+)
+
+completed = DummyOperator(
+    task_id='completed',
+    dag=dag)
+
+#setting up Dependencies
+start >> t1 >> t2 >> t3 >> completed
+#start >> [t1, t2] >> t3
+print("Dag setup")
+#Remember to drop not needed tables
+
+# api_extraction()
+# transformation()
+# load_data()
+

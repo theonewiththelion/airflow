@@ -1,0 +1,93 @@
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/lockfile/pidlockfile.py", line 77, in acquire
+    write_pid_to_pidfile(self.path)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/lockfile/pidlockfile.py", line 161, in write_pid_to_pidfile
+    pidfile_fd = os.open(pidfile_path, open_flags, open_mode)
+FileExistsError: [Errno 17] File exists: '/Users/theonewiththelion/airflow/airflow-scheduler.pid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow_env/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/cli/cTraceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: dag.last_parsed_time
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/airflow_env/bin/airflow", line 8, in <module>
+    sys.exit(main())
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/__main__.py", line 48, in main
+    args.func(args)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/cli/commands/scheduler_command.py", line 70, in scheduler
+    _run_scheduler_job(args=args)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/cli/commands/scheduler_command.py", line 46, in _run_scheduler_job
+    job.run()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/jobs/base_job.py", line 245, in run
+    self._execute()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 628, in _execute
+    self._run_scheduler_loop()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 709, in _run_scheduler_loop
+[2022-08-22 20:58:43 -0500] [2907] [INFO] Handling signal: term
+    num_queued_tis = self._do_scheduling(session)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 782, in _do_scheduling
+    self._create_dagruns_for_dags(guard, session)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/utils/retries.py", line 76, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/tenacity/__init__.py", line 382, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/tenacity/__init__.py", line 360, in iter
+    raise retry_exc.reraise()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/tenacity/__init__.py", line 193, in reraise
+    raise self.last_attempt.result()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/utils/retries.py", line 85, in wrapped_function
+    return func(*args, **kwargs)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 847, in _create_dagruns_for_dags
+    self._create_dag_runs(query.all(), session)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+[2022-08-22 20:58:43 -0500] [2909] [INFO] Worker exiting (pid: 2909)
+    return list(self)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+[2022-08-22 20:58:43 -0500] [2910] [INFO] Worker exiting (pid: 2910)
+    return self._execute_and_instances(context)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3560, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/opt/anaconda3/envs/airflow_env/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: dag.last_parsed_time
+[SQL: SELECT dag.dag_id AS dag_dag_id, dag.root_dag_id AS dag_root_dag_id, dag.is_paused AS dag_is_paused, dag.is_subdag AS dag_is_subdag, dag.is_active AS dag_is_active, dag.last_parsed_time AS dag_last_parsed_time, dag.last_pickled AS dag_last_pickled, dag.last_expired AS dag_last_expired, dag.scheduler_lock AS dag_scheduler_lock, dag.pickle_id AS dag_pickle_id, dag.fileloc AS dag_fileloc, dag.owners AS dag_owners, dag.description AS dag_description, dag.default_view AS dag_default_view, dag.schedule_interval AS dag_schedule_interval, dag.max_active_tasks AS dag_max_active_tasks, dag.max_active_runs AS dag_max_active_runs, dag.has_task_concurrency_limits AS dag_has_task_concurrency_limits, dag.has_import_errors AS dag_has_import_errors, dag.next_dagrun AS dag_next_dagrun, dag.next_dagrun_data_interval_start AS dag_next_dagrun_data_interval_start, dag.next_dagrun_data_interval_end AS dag_next_dagrun_data_interval_end, dag.next_dagrun_create_after AS dag_next_dagrun_create_after 
+FROM dag 
+WHERE dag.is_paused = 0 AND dag.is_active = 1 AND dag.has_import_errors = 0 AND dag.next_dagrun_create_after <= CURRENT_TIMESTAMP ORDER BY dag.next_dagrun_create_after
+ LIMIT ? OFFSET ?]
+[parameters: (10, 0)]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-08-22 20:58:43 -0500] [2907] [INFO] Shutting down: Master
